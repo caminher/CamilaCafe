@@ -112,8 +112,8 @@ main p {
 
 
 section {
-    padding: 30px;
-    margin-bottom: 40px;
+    padding: 10px;
+    margin-bottom: 5px;
 }
 
 
@@ -855,19 +855,28 @@ footer a:hover {
 }
 
 /*---------------------------------------------- CONTACTO ------------------------------------------*/
-
+.contacto {
+    margin-bottom: 40px;
+}
 .informacion {
     max-width: 1100px;
     width: 90%;
-    margin: 0 auto 70px;
+    margin: 0 auto 50px;
 }
 
 .informacion>h2 {
-    margin-bottom: 35px;
+    margin-bottom: 30px;
     text-align: center;
     color: #5F2900;
 }
 
+.texto-info {
+    max-width: 600px;
+    margin: 0 auto 35px;
+    text-align: center;
+    font-size: 1rem;
+    line-height: 1.7;
+}
 
 
 .contenedor-informacion {
@@ -884,7 +893,7 @@ footer a:hover {
     flex: 1;
     width: 100%;
     padding: 30px 25px;
-    background-color: #FFFFFF;
+    background-color: #ebe5e7;
     border: 1px solid #E8D9CF;
     border-radius: 16px;
     text-align: center;
@@ -905,7 +914,6 @@ footer a:hover {
 
 .ubis p {
     margin: 0;
-    color: #555555;
     font-size: 0.95rem;
 }
 
