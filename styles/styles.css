@@ -1,0 +1,1218 @@
+/* fuente */
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* tipo de letra*/
+body {
+    font-family: "Poppins", sans-serif;
+    color: #000000;
+    background-color: #FFFCFF;
+    font-size: 16px;
+}
+
+
+
+/* header */
+
+
+/* --------------------------------------- NAVEGADOR BOOTSTRAP ----------------------------- */
+
+header {
+    background-color: #FFFCFF;
+    border-bottom: 2px solid #80583c;
+}
+
+.navbar-camila {
+    padding: 1rem 1.5rem;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    text-decoration: none;
+}
+
+.logo img {
+    width: 50px;
+    height: auto;
+}
+
+.logo h1 {
+    color: #5F2900;
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin: 0;
+}
+
+.navbar-camila .navbar-nav {
+    gap: 0.25rem;
+}
+
+.navbar-camila .nav-link {
+    color: #5F2900;
+    font-weight: 500;
+    padding: 0.75rem 1rem;
+    border-radius: 10px;
+    transition: 0.3s;
+}
+
+.navbar-camila .nav-link:hover {
+    background-color: #F5E7DE;
+    color: #A84900;
+}
+
+.navbar-camila .nav-link.active {
+    color: #A84900;
+    font-weight: 600;
+}
+
+.navbar-toggler {
+    border: 1px solid #80583c;
+}
+
+.navbar-toggler:focus {
+    box-shadow: 0 0 0 0.15rem rgba(128, 88, 60, 0.20);
+}
+
+
+/*---------------------------------------- VALORES GENERALES -------------------------------------*/
+
+main {
+    background-color: #FFFCFF;
+    padding: 20px;
+}
+
+main h2 {
+    font-size: 2rem;
+    font-weight: 600;
+    color: #5F2900;
+}
+
+main h3 {
+    font-size: 1.5rem;
+    font-weight: 500;
+    color: #a84900;
+}
+
+
+main p {
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.6;
+    color: #000000;
+}
+
+
+section {
+    padding: 30px;
+    margin-bottom: 40px;
+}
+
+
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+/*-------------------------------------------- INICIO ------------------------------------------- */
+
+/* ---------------- HERO ---------------- */
+
+
+.titulo-inicio {
+    max-width: 1250px;
+    margin: 40px auto 60px;
+    padding: 20px;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 35px;
+    align-items: center;
+    background-color: transparent;
+}
+
+.texto-inicio {
+    padding: 0;
+}
+
+.texto-inicio h2 {
+    font-size: 3rem;
+    line-height: 1.15;
+    font-weight: 600;
+    color: #5F2900;
+    margin-bottom: 20px;
+}
+
+.texto-inicio h2 strong {
+    color: #A84900;
+}
+
+.texto-inicio p {
+    font-size: 1rem;
+    line-height: 1.7;
+    color: #000000;
+    margin-bottom: 25px;
+}
+
+.boton-inicio {
+    display: inline-block;
+    padding: 11px 20px;
+    background-color: #5F2900;
+    color: #FFFFFF;
+    text-decoration: none;
+    font-size: 0.9rem;
+    font-weight: 500;
+    border-radius: 8px;
+    transition: 0.3s;
+}
+
+.boton-inicio:hover {
+    background-color: #A84900;
+    color: #FFFFFF;
+    transform: translateY(-2px);
+}
+
+.imagen-inicio {
+    margin: 0;
+    position: relative;
+}
+
+.imagen-inicio img {
+    width: 100%;
+    height: 280px;
+    object-fit: cover;
+    border-radius: 20px;
+}
+
+.imagen-inicio figcaption {
+    margin-top: 8px;
+    font-size: 0.75rem;
+    font-style: italic;
+    color: #80583c;
+    text-align: right;
+    opacity: 0.6;
+}
+
+
+/* ------------ POR QUE ELEGIRNOS ---------------- */
+
+.porque-elegirnos {
+    max-width: 1100px;
+    width: 90%;
+    margin: 70px auto;
+    padding: 45px 50px;
+    background-color: #ebe5e7;
+    border-radius: 24px;
+    box-shadow: 0 12px 30px rgba(95, 41, 0, 0.08);
+    text-align: center;
+}
+
+.encabezado-seccion {
+    max-width: 650px;
+    margin: 0 auto 45px;
+    text-align: center;
+}
+
+.encabezado-seccion span {
+    display: block;
+    margin-bottom: 10px;
+    color: #A84900;
+    font-size: 0.75rem;
+    font-weight: 700;
+    letter-spacing: 4px;
+    text-transform: uppercase;
+}
+
+.encabezado-seccion h2 {
+    margin-bottom: 14px;
+    font-size: 2.2rem;
+    font-weight: 600;
+    color: #5F2900;
+}
+
+.encabezado-seccion p {
+    max-width: 620px;
+    margin: 0 auto;
+    font-size: 0.95rem;
+    line-height: 1.7;
+    color: #555555;
+}
+
+.beneficios {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 18px;
+}
+
+.beneficio {
+    padding: 26px 24px;
+    background-color: #FFFCFA;
+    border: 1px solid #E8D9CF;
+    border-radius: 12px;
+    text-align: center;
+    transition: 0.3s;
+}
+
+.beneficio h3 {
+    margin-bottom: 8px;
+    font-size: 1.05rem;
+    font-weight: 500;
+    color: #5F2900;
+}
+
+.beneficio p {
+    margin: 0;
+    font-size: 0.9rem;
+    line-height: 1.6;
+    color: #444444;
+}
+
+.beneficio:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 10px 22px rgba(95, 41, 0, 0.08);
+    border-color: #D8BFAE;
+}
+
+
+/* ------------ FAVORITOS -------------- */
+
+.nuestros-favoritos {
+    display: grid;
+    grid-template-areas:
+        "titulo"
+        "favoritos";
+    grid-template-columns: 1fr;
+    gap: 2rem;
+    max-width: 1250px;
+    margin: 80px auto;
+    padding: 20px;
+}
+
+.encabezado-favoritos {
+    grid-area: titulo;
+    margin-bottom: 35px;
+    text-align: center;
+}
+
+.contenedor-favoritos {
+    grid-area: favoritos;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 25px;
+}
+
+.favoritos {
+    padding: 1.25rem;
+    overflow: hidden;
+    background-color: #F0DCCA;
+    border: 1px solid #C7B2A4;
+    border-radius: 16px;
+    transition: 0.3s;
+}
+
+.favoritos:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 28px rgba(95, 41, 0, 0.08);
+}
+
+.favoritos figure {
+    margin: 0;
+}
+
+.favoritos img {
+    width: 100%;
+    height: 320px;
+    object-fit: cover;
+}
+
+.favoritos figcaption {
+    padding: 8px 18px 0;
+    font-size: 0.75rem;
+    font-style: italic;
+    color: #9A7258;
+}
+
+.texto-favoritos {
+    padding: 18px;
+}
+
+.texto-favoritos h3 {
+    margin-bottom: 10px;
+
+    color: #A84900;
+    text-align: center;
+}
+
+.texto-favoritos p {
+    margin: 0;
+    text-align: center;
+}
+
+/* ---------------- GALERÍA / CARRUSEL ---------------- */
+
+.galeria {
+    max-width: 1100px;
+    width: 90%;
+    margin: 80px auto;
+}
+
+.encabezado-galeria {
+    text-align: center;
+    margin-bottom: 35px;
+}
+
+.encabezado-galeria span {
+    display: block;
+    color: #A84900;
+    font-size: 0.8rem;
+    font-weight: 700;
+    letter-spacing: 4px;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+}
+
+.encabezado-galeria h2 {
+    color: #5F2900;
+    margin-bottom: 12px;
+}
+
+.encabezado-galeria p {
+    max-width: 600px;
+    margin: 0 auto;
+    color: #555555;
+    line-height: 1.6;
+}
+
+#carouselCamila {
+    overflow: hidden;
+    border-radius: 20px;
+    box-shadow: 0 12px 30px rgba(95, 41, 0, 0.08);
+}
+
+#carouselCamila .carousel-item img {
+    width: 100%;
+    height: 320px;
+    object-fit: cover;
+}
+
+/* ------------ PIE DE PAGINA -------------- */
+
+
+footer {
+    background-color: #5F2900;
+    color: #FFFFFF;
+    padding: 30px 20px 15px;
+}
+
+.pie {
+    max-width: 1200px;
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 25px;
+}
+
+
+/* LOGO */
+
+.footerlogo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.footerlogo figure {
+    margin: 0;
+    text-align: center;
+}
+
+.footerlogo img {
+    width: 85px;
+    height: auto;
+    background-color: #FFFCFF;
+    border-radius: 50%;
+    padding: 5px;
+}
+
+.footerlogo h3 {
+    margin: 8px 0 0;
+
+    color: #FFFFFF;
+    font-size: 1.1rem;
+    font-weight: 600;
+}
+
+
+/* TÍTULOS */
+
+.footerlinks h3,
+.redes-pie h3 {
+    color: #FFFFFF;
+    font-size: 1rem;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+
+/* LISTAS */
+
+footer ul {
+    padding: 0;
+    margin: 0;
+}
+
+footer li {
+    list-style: none;
+    margin-bottom: 5px;
+}
+
+
+/* ENLACES */
+
+footer a {
+    color: #FFFFFF;
+    text-decoration: none;
+    font-size: 0.85rem;
+    transition: 0.3s;
+}
+
+footer a:hover {
+    color: #F0DCCA;
+}
+
+
+/* LINKS Y REDES */
+
+.footerlinks,
+.redes-pie {
+    text-align: center;
+}
+
+
+/* COPYRIGHT */
+
+.copy {
+    width: 100%;
+    margin-top: 5px;
+    padding-top: 15px;
+    border-top: 1px solid rgba(255, 255, 255, 0.25);
+    text-align: center;
+}
+
+.copy p {
+    margin: 0;
+    color: #FFFFFF;
+    font-size: 0.75rem;
+}
+
+.copy strong {
+    color: #F0DCCA;
+}
+
+/*------------------------------------ CONTENEDOR DE CADA PESTAÑA ------------------------------------ */
+
+.contenedor {
+    max-width: 1200px;
+    width: 90%;
+    margin: 70px auto 90px;
+    padding: 55px 30px;
+    background-color: #FFFFFF;
+    border-radius: 35px;
+    box-shadow: 0 15px 40px rgba(95, 41, 0, 0.08);
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+}
+
+
+/* TEXTO CHICO */
+
+.contenedor span {
+    display: block;
+    color: #A84900;
+    font-size: 0.8rem;
+    font-weight: 700;
+    letter-spacing: 4px;
+    text-transform: uppercase;
+    margin-bottom: 15px;
+}
+
+
+/* TÍTULO */
+
+.contenedor h2 {
+    color: #5F2900;
+    font-size: 2.4rem;
+    font-weight: 600;
+    margin-bottom: 0;
+}
+
+
+/* LÍNEA MARRON */
+
+.contenedor::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100px;
+    height: 5px;
+    background-color: #A84900;
+    border-radius: 0 0 20px 20px;
+}
+
+/*----------------------------------------------- MENU ---------------------------------------------*/
+
+
+.cafe-caliente,
+.cafe-frio,
+.pasteleria {
+    max-width: 1200px;
+    width: 90%;
+    margin: 0 auto 70px;
+}
+
+.cafe-caliente h2,
+.cafe-frio h2,
+.pasteleria h2 {
+    text-align: center;
+    margin-bottom: 30px;
+    color: #5F2900;
+}
+
+
+
+.contenedor-calientes,
+.contenedor-frios,
+.contenedor-tortas {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 2rem;
+}
+
+
+/* TARJETAS */
+
+.calientes,
+.frio,
+.tortas {
+    overflow: hidden;
+    padding: 0;
+    background-color: #FFFFFF;
+    border: 1px solid #E8D9CF;
+    border-radius: 16px;
+    transition: 0.3s;
+}
+
+.calientes:hover,
+.frio:hover,
+.tortas:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(95, 41, 0, 0.08);
+}
+
+
+/* IMÁGENES */
+
+.calientes figure,
+.frio figure,
+.tortas figure {
+    margin: 0;
+}
+
+.calientes img,
+.frio img,
+.tortas img {
+    width: 100%;
+    height: 280px;
+    object-fit: cover;
+}
+
+
+/* FIGCAPTION */
+
+.calientes figcaption,
+.frio figcaption,
+.tortas figcaption {
+    padding: 8px 18px 0;
+    font-size: 0.75rem;
+    font-style: italic;
+    color: #9A7258;
+}
+
+
+/* TEXTO */
+
+.calientes h3,
+.frio h3,
+.tortas h3 {
+    padding: 15px 18px 0;
+    color: #A84900;
+    text-align: center;
+    font-size: 1.2rem;
+}
+
+.calientes p,
+.frio p,
+.tortas p {
+    padding: 0 18px 20px;
+    margin: 0;
+    text-align: center;
+    line-height: 1.6;
+}
+
+/*--------------------------------------- SOBRE NOSOTROS  ---------------------------------------------*/
+
+/* ---------------- HISTORIA ---------------- */
+
+.historia {
+    max-width: 900px;
+    width: 90%;
+    margin: 0 auto 70px;
+    padding: 35px;
+    background-color: #FFFFFF;
+    border-radius: 18px;
+    box-shadow: 0 10px 25px rgba(95, 41, 0, 0.06);
+}
+
+.historia h2 {
+    margin-bottom: 20px;
+    color: #5F2900;
+    text-align: center;
+}
+
+.historia p {
+    line-height: 1.8;
+    text-align: justify;
+}
+
+/* ---------------- NUESTRA ESENCIA ---------------- */
+
+.esencia {
+    max-width: 1100px;
+    width: 90%;
+    margin: 0 auto 70px;
+}
+
+.esencia h2 {
+    text-align: center;
+    margin-bottom: 35px;
+}
+
+.contenedor-esencia {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    flex-wrap: wrap;
+}
+
+.historia-esencia {
+    flex: 1;
+    min-width: 250px;
+    padding: 30px 25px;
+    background-color: #F8F4F1;
+    border-radius: 16px;
+    text-align: center;
+    transition: 0.3s;
+}
+
+.historia-esencia:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 10px 22px rgba(95, 41, 0, 0.08);
+}
+
+.historia-esencia h3 {
+    margin-bottom: 10px;
+    color: #A84900;
+}
+
+.historia-esencia p {
+    margin: 0;
+}
+
+/* ---------------- ESPACIO ---------------- */
+
+.cafeteria {
+    max-width: 1100px;
+    width: 90%;
+    margin: 0 auto 80px;
+}
+
+.cafeteria-nosotros {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 25px;
+}
+
+.cafeteria-nosotros h2 {
+    text-align: center;
+}
+
+.cafeteria-nosotros figure {
+    margin: 0;
+    width: 100%;
+}
+
+.cafeteria-nosotros img {
+    width: 100%;
+    height: 320px;
+    object-fit: cover;
+    border-radius: 20px;
+}
+
+.cafeteria-nosotros figcaption {
+    margin-top: 8px;
+    font-size: 0.8rem;
+    font-style: italic;
+    color: #80583c;
+    text-align: right;
+    opacity: 0.7;
+}
+
+
+
+/*----------------------------------- PREGUNTAS FRECUENTES -----------------------------------*/
+
+
+.preguntas-frecuentes {
+    max-width: 900px;
+    width: 90%;
+    margin: 0 auto 80px;
+}
+
+.preguntas-frecuentes>h2 {
+    margin-bottom: 30px;
+    color: #5F2900;
+    text-align: center;
+}
+
+
+/* ACORDEÓN BOOTSTRAP */
+
+.accordion {
+    --bs-accordion-border-color: #E8D9CF;
+    --bs-accordion-border-radius: 14px;
+}
+
+
+/* CADA PREGUNTA */
+
+.accordion-item {
+    margin-bottom: 15px;
+    overflow: hidden;
+    border: 1px solid #E8D9CF !important;
+    border-radius: 14px !important;
+}
+
+
+/* BOTÓN */
+
+.accordion-button {
+    padding: 20px 25px;
+    color: #5F2900;
+    background-color: #FFFFFF;
+    font-weight: 600;
+    box-shadow: none !important;
+}
+
+
+/* PREGUNTA ABIERTA */
+
+.accordion-button:not(.collapsed) {
+    color: #A84900;
+    background-color: #F8F4F1;
+    box-shadow: none;
+}
+
+
+/* AL HACER FOCO */
+
+.accordion-button:focus {
+    border-color: #E8D9CF;
+    box-shadow: none;
+}
+
+
+/* RESPUESTA */
+
+.accordion-body {
+    padding: 20px 25px;
+    color: #555555;
+    line-height: 1.7;
+    background-color: #FFFFFF;
+}
+
+/*---------------------------------------------- CONTACTO ------------------------------------------*/
+
+.informacion {
+    max-width: 1100px;
+    width: 90%;
+    margin: 0 auto 70px;
+}
+
+.informacion>h2 {
+    margin-bottom: 35px;
+    text-align: center;
+    color: #5F2900;
+}
+
+
+
+.contenedor-informacion {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px;
+}
+
+
+/* TARJETAS */
+
+.ubis {
+    flex: 1;
+    width: 100%;
+    padding: 30px 25px;
+    background-color: #FFFFFF;
+    border: 1px solid #E8D9CF;
+    border-radius: 16px;
+    text-align: center;
+    transition: 0.3s;
+}
+
+.ubis:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 10px 22px rgba(95, 41, 0, 0.08);
+    border-color: #D8BFAE;
+}
+
+.ubis h3 {
+    margin-bottom: 12px;
+    color: #A84900;
+    font-size: 1.15rem;
+}
+
+.ubis p {
+    margin: 0;
+    color: #555555;
+    font-size: 0.95rem;
+}
+
+/* -----------------------------------------------------------------
+TABLET
+---------------------------------------------- */
+
+@media (min-width: 768px) {
+
+    /* ---------------- INDEX: HERO ---------------- */
+
+    .titulo-inicio {
+        padding: 30px;
+        gap: 45px;
+    }
+
+    .texto-inicio h2 {
+        font-size: 2.7rem;
+    }
+
+    .texto-inicio p {
+        max-width: 600px;
+    }
+
+    .imagen-inicio img {
+        height: 360px;
+    }
+
+
+    /* ---------------- INDEX: POR QUÉ ELEGIRNOS ---------------- */
+
+    .beneficios {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+
+    /* ---------------- INDEX: FAVORITOS ---------------- */
+
+    .contenedor-favoritos {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    /* ---------------- INDEX: CARRUSEL ---------------- */
+
+
+    #carouselCamila .carousel-item img {
+        height: 430px;
+    }
+
+    /* FOOTER */
+
+    .pie {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: flex-start;
+        flex-wrap: wrap;
+    }
+
+    .footerlogo,
+    .footerlinks,
+    .redes-pie {
+        text-align: left;
+    }
+
+    .footerlogo {
+        justify-content: flex-start;
+    }
+
+    .footerlogo figure {
+        text-align: left;
+    }
+
+    .copy {
+        flex-basis: 100%;
+    }
+
+    /* ENCABEZADO DE PÁGINAS */
+
+    .contenedor {
+        padding: 65px 50px;
+    }
+
+    .contenedor h2 {
+        font-size: 3rem;
+    }
+
+
+
+    /* ---------------- SERVICIOS ---------------- */
+
+    .contenedor-calientes,
+    .contenedor-frios,
+    .contenedor-tortas {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .calientes img,
+    .frio img,
+    .tortas img {
+        height: 320px;
+    }
+
+    /*-----------------SOBRE NOSOTROS-------------- */
+
+    .cafeteria-nosotros img {
+        height: 420px;
+    }
+
+    /* ---------------- PREGUNTAS FRECUENTES ---------------- */
+
+    .preguntas-frecuentes {
+        width: 85%;
+        max-width: 800px;
+
+        margin-bottom: 70px;
+    }
+
+    .preguntas-frecuentes>h2 {
+        font-size: 2rem;
+
+        margin-bottom: 30px;
+    }
+
+    .accordion-button {
+        padding: 20px 22px;
+
+        font-size: 1rem;
+    }
+
+    .accordion-body {
+        padding: 20px 22px;
+
+        font-size: 0.95rem;
+    }
+
+    /* ---------------- CONTACTO ---------------- */
+    .contenedor-informacion {
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    .ubis {
+        min-width: 280px;
+    }
+
+    .informacion>h2 {
+        font-size: 2rem;
+    }
+
+}
+
+/* -----------------------------------------------------------------
+ESCRITORIO
+---------------------------------------------- */
+
+
+@media (min-width: 1024px) {
+
+    /* ---------------- INDEX: HERO ---------------- */
+
+    .titulo-inicio {
+        grid-template-columns: 1fr 1fr;
+        gap: 70px;
+
+        padding: 30px;
+        margin: 50px auto 80px;
+    }
+
+    .texto-inicio h2 {
+        font-size: 4rem;
+        max-width: 600px;
+    }
+
+    .texto-inicio p {
+        max-width: 560px;
+        text-align: justify;
+    }
+
+    .imagen-inicio img {
+        height: 420px;
+    }
+
+
+    /* ---------------- INDEX: POR QUÉ ELEGIRNOS ---------------- */
+
+    .beneficios {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+
+    /* ---------------- INDEX: FAVORITOS ---------------- */
+
+    .contenedor-favoritos {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .favoritos img {
+        height: 360px;
+    }
+
+    /* ---------------- INDEX: carrusel ---------------- */
+
+    #carouselCamila .carousel-item img {
+        height: 520px;
+    }
+
+    /* ---------------- PIE ---------------- */
+
+    /* FOOTER - ESCRITORIO */
+
+    .pie {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: flex-start;
+        flex-wrap: wrap;
+        gap: 40px;
+    }
+
+    .footerlogo {
+        justify-content: flex-start;
+    }
+
+    .footerlogo figure {
+        text-align: center;
+    }
+
+    .footerlinks,
+    .redes-pie {
+        text-align: left;
+    }
+
+    .copy {
+        flex-basis: 100%;
+    }
+
+    /* ENCABEZADO DE PÁGINAS */
+
+    .contenedor {
+        padding: 75px 80px;
+    }
+
+    .contenedor h2 {
+        font-size: 3.6rem;
+    }
+
+    /* ---------------- SERVICIOS ---------------- */
+
+    .contenedor-calientes,
+    .contenedor-frios,
+    .contenedor-tortas {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .calientes img,
+    .frio img,
+    .tortas img {
+        height: 350px;
+    }
+
+    /*-----------------SOBRE NOSOTROS-------------- */
+
+    .cafeteria-nosotros img {
+        height: 500px;
+    }
+
+    /*----------------- PREGUNTAS FRECUENTES-------------- */
+
+    .preguntas-frecuentes {
+        max-width: 900px;
+        width: 80%;
+        margin-bottom: 90px;
+    }
+
+    .preguntas-frecuentes>h2 {
+        font-size: 2.2rem;
+
+        margin-bottom: 35px;
+    }
+
+    .accordion-item {
+        margin-bottom: 15px;
+    }
+
+    .accordion-button {
+        padding: 22px 25px;
+
+        font-size: 1.05rem;
+    }
+
+    .accordion-body {
+        padding: 22px 25px;
+
+        font-size: 1rem;
+    }
+
+    /* ---------------- CONTACTO ---------------- */
+
+    .contenedor-informacion {
+        flex-direction: row;
+        flex-wrap: nowrap;
+        gap: 30px;
+    }
+
+    .ubis {
+        min-width: 0;
+        padding: 35px 30px;
+    }
+
+
+}
