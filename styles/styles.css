@@ -86,7 +86,7 @@ header {
 /*---------------------------------------- VALORES GENERALES -------------------------------------*/
 
 main {
-    background-color: #FFFCFF;
+    background-color: #faf9fa98;
     padding: 20px;
 }
 
@@ -677,24 +677,39 @@ footer a:hover {
 /* ---------------- HISTORIA ---------------- */
 
 .historia {
-    max-width: 900px;
+    max-width: 1100px;
     width: 90%;
-    margin: 0 auto 70px;
-    padding: 35px;
+    margin: 40px auto 70px;
+    padding: 45px 30px;
     background-color: #FFFFFF;
-    border-radius: 18px;
+    border-radius: 28px;
     box-shadow: 0 10px 25px rgba(95, 41, 0, 0.06);
+    position: relative;
+    overflow: hidden;
 }
 
 .historia h2 {
-    margin-bottom: 20px;
+    margin-bottom: 25px;
     color: #5F2900;
-    text-align: center;
+    text-align: left;
+    font-size: 2rem;
 }
 
 .historia p {
     line-height: 1.8;
-    text-align: justify;
+    font-size: 1rem;
+}
+
+.historia::after {
+    content: "";
+    position: absolute;
+    width: 160px;
+    height: 160px;
+    top: -70px;
+    right: -60px;
+    background-color: #F0DCCA;
+    border-radius: 50%;
+    opacity: 0.5;
 }
 
 /* ---------------- NUESTRA ESENCIA ---------------- */
@@ -858,6 +873,7 @@ footer a:hover {
 .contacto {
     margin-bottom: 40px;
 }
+
 .informacion {
     max-width: 1100px;
     width: 90%;
@@ -1020,6 +1036,10 @@ TABLET
 
     .cafeteria-nosotros img {
         height: 420px;
+    }
+
+    .historia p{
+        text-align: justify;
     }
 
     /* ---------------- PREGUNTAS FRECUENTES ---------------- */
