@@ -1,0 +1,159 @@
+@use "../utilities/variables" as v;
+@use "../utilities/mixins" as m;
+
+
+footer {
+    background-color: v.$color-primary;
+    color: v.$color-blanco;
+    padding: 30px 20px 15px;
+
+    ul {
+        padding: 0;
+        margin: 0;
+    }
+
+    li {
+        list-style: none;
+        margin-bottom: 5px;
+    }
+
+    a {
+        color: v.$color-blanco;
+        text-decoration: none;
+        font-size: 0.85rem;
+        transition: 0.3s;
+
+        &:hover {
+            color: v.$color-accent;
+        }
+    }
+}
+
+
+// CONTENEDOR DEL FOOTER
+
+.pie {
+    max-width: 1200px;
+    width: 90%;
+    margin: 0 auto;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 25px;
+}
+
+
+// LOGO
+
+.footerlogo {
+    @include m.flex-center;
+
+    figure {
+        margin: 0;
+        text-align: center;
+    }
+
+    img {
+        width: 85px;
+        height: auto;
+        background-color: v.$color-blanco;
+        border-radius: 50%;
+        padding: 5px;
+    }
+
+    h3 {
+        margin: 8px 0 0;
+        color: v.$color-blanco;
+        font-size: 1.1rem;
+        font-weight: 600;
+    }
+}
+
+
+// LINKS Y REDES
+
+.footerlinks,
+.redes-pie {
+    text-align: center;
+
+    h3 {
+        color: v.$color-blanco;
+        font-size: 1rem;
+        font-weight: 600;
+        margin-bottom: 10px;
+    }
+}
+
+
+// COPYRIGHT
+
+.copy {
+    width: 100%;
+    margin-top: 5px;
+    padding-top: 15px;
+    border-top: 1px solid v.$color-accent;
+    text-align: center;
+
+    p {
+        margin: 0;
+        color: v.$color-blanco;
+        font-size: 0.75rem;
+    }
+
+    strong {
+        color: v.$color-accent;
+    }
+}
+
+// ----------------- TABLET --------------
+
+@media (min-width: 768px) {
+    .pie {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: flex-start;
+        flex-wrap: wrap;
+    }
+
+    .footerlogo,
+    .footerlinks,
+    .redes-pie {
+        text-align: left;
+    }
+
+    .copy {
+        flex-basis: 100%;
+    }
+}
+
+//-------------ESCRITORIO---------
+
+@media (min-width: 1024px) {
+
+    .pie {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: flex-start;
+        flex-wrap: wrap;
+        gap: 40px;
+    }
+
+    .footerlogo {
+        justify-content: flex-start;
+        text-align: left;
+    }
+
+    .footerlinks {
+        text-align: left;
+    }
+
+    .redes-pie {
+        text-align: left;
+    }
+
+    .copy {
+        flex-basis: 100%;
+        width: 100%;
+    }
+}

@@ -1,0 +1,941 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  color: #000000;
+  background-color: #EBE5E7;
+  font-size: 16px;
+}
+
+main {
+  padding: 20px;
+}
+main h2 {
+  font-size: 2rem;
+  font-weight: 600;
+  color: #5F2900;
+}
+main h3 {
+  font-size: 1.5rem;
+  font-weight: 500;
+  color: #A84900;
+}
+main p {
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.6;
+  color: #000000;
+}
+
+section {
+  padding: 10px;
+  margin-bottom: 5px;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+header {
+  background-color: #FFFFFF;
+  border-bottom: 2px solid #E8D9CF;
+}
+
+.navbar-camila {
+  padding: 1rem 1.5rem;
+}
+.navbar-camila .navbar-nav {
+  gap: 0.25rem;
+}
+.navbar-camila .nav-link {
+  color: #5F2900;
+  font-weight: 500;
+  padding: 0.75rem 1rem;
+  border-radius: 8px;
+  transition: 0.3s;
+}
+.navbar-camila .nav-link:hover {
+  background-color: #E8D9CF;
+  color: #A84900;
+}
+.navbar-camila .nav-link.active {
+  color: #A84900;
+  font-weight: 600;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  text-decoration: none;
+}
+.logo img {
+  width: 50px;
+  height: auto;
+}
+.logo h1 {
+  color: #5F2900;
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin: 0;
+}
+
+.navbar-toggler {
+  border: 1px solid #E8D9CF;
+}
+.navbar-toggler:focus {
+  box-shadow: 0 0 0 0.15rem rgba(95, 41, 0, 0.15);
+}
+
+footer {
+  background-color: #5F2900;
+  color: #FFFFFF;
+  padding: 30px 20px 15px;
+}
+footer ul {
+  padding: 0;
+  margin: 0;
+}
+footer li {
+  list-style: none;
+  margin-bottom: 5px;
+}
+footer a {
+  color: #FFFFFF;
+  text-decoration: none;
+  font-size: 0.85rem;
+  transition: 0.3s;
+}
+footer a:hover {
+  color: #E8D9CF;
+}
+
+.pie {
+  max-width: 1200px;
+  width: 90%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 25px;
+}
+
+.footerlogo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.footerlogo figure {
+  margin: 0;
+  text-align: center;
+}
+.footerlogo img {
+  width: 85px;
+  height: auto;
+  background-color: #FFFFFF;
+  border-radius: 50%;
+  padding: 5px;
+}
+.footerlogo h3 {
+  margin: 8px 0 0;
+  color: #FFFFFF;
+  font-size: 1.1rem;
+  font-weight: 600;
+}
+
+.footerlinks,
+.redes-pie {
+  text-align: center;
+}
+.footerlinks h3,
+.redes-pie h3 {
+  color: #FFFFFF;
+  font-size: 1rem;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+.copy {
+  width: 100%;
+  margin-top: 5px;
+  padding-top: 15px;
+  border-top: 1px solid #E8D9CF;
+  text-align: center;
+}
+.copy p {
+  margin: 0;
+  color: #FFFFFF;
+  font-size: 0.75rem;
+}
+.copy strong {
+  color: #E8D9CF;
+}
+
+@media (min-width: 768px) {
+  .pie {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+  }
+  .footerlogo,
+  .footerlinks,
+  .redes-pie {
+    text-align: left;
+  }
+  .copy {
+    flex-basis: 100%;
+  }
+}
+@media (min-width: 1024px) {
+  .pie {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    gap: 40px;
+  }
+  .footerlogo {
+    justify-content: flex-start;
+    text-align: left;
+  }
+  .footerlinks {
+    text-align: left;
+  }
+  .redes-pie {
+    text-align: left;
+  }
+  .copy {
+    flex-basis: 100%;
+    width: 100%;
+  }
+}
+.titulo-inicio {
+  max-width: 1250px;
+  margin: 40px auto 60px;
+  padding: 20px;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 35px;
+  align-items: center;
+}
+
+.texto-inicio h2 {
+  margin-bottom: 20px;
+  font-size: 2.5rem;
+  line-height: 1.15;
+  font-weight: 600;
+  color: #5F2900;
+}
+.texto-inicio h2 strong {
+  color: #A84900;
+}
+.texto-inicio p {
+  margin-bottom: 25px;
+}
+
+.imagen-inicio {
+  margin: 0;
+}
+.imagen-inicio img {
+  width: 100%;
+  height: 280px;
+  object-fit: cover;
+  border-radius: 20px;
+  box-shadow: 0 10px 22px rgba(95, 41, 0, 0.08);
+}
+.imagen-inicio figcaption {
+  margin-top: 8px;
+  font-size: 0.75rem;
+  font-style: italic;
+  color: #555555;
+  text-align: right;
+}
+
+.porque-elegirnos {
+  max-width: 1100px;
+  width: 90%;
+  margin: 70px auto;
+  padding: 35px 25px;
+  background-color: #FFFFFF;
+  border: 1px solid #E8D9CF;
+  border-radius: 20px;
+  box-shadow: 0 10px 22px rgba(95, 41, 0, 0.08);
+  text-align: center;
+}
+
+.encabezado-seccion {
+  max-width: 650px;
+  margin: 0 auto 45px;
+  text-align: center;
+}
+.encabezado-seccion span {
+  display: block;
+  margin-bottom: 10px;
+  color: #A84900;
+  font-size: 0.75rem;
+  font-weight: 700;
+  letter-spacing: 4px;
+  text-transform: uppercase;
+}
+.encabezado-seccion h2 {
+  margin-bottom: 14px;
+  font-size: 2.2rem;
+  font-weight: 600;
+  color: #5F2900;
+}
+.encabezado-seccion p {
+  max-width: 620px;
+  margin: 0 auto;
+}
+
+.beneficios {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 18px;
+}
+
+.nuestros-favoritos {
+  max-width: 1250px;
+  margin: 80px auto;
+  padding: 20px;
+  display: grid;
+  grid-template-areas: "titulo" "favoritos";
+  grid-template-columns: 1fr;
+  gap: 2rem;
+}
+
+.encabezado-favoritos {
+  grid-area: titulo;
+  margin-bottom: 35px;
+  text-align: center;
+}
+
+.contenedor-favoritos {
+  grid-area: favoritos;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 25px;
+}
+
+.galeria {
+  max-width: 1100px;
+  width: 90%;
+  margin: 80px auto;
+}
+
+.encabezado-galeria {
+  margin-bottom: 35px;
+  text-align: center;
+}
+.encabezado-galeria span {
+  display: block;
+  margin-bottom: 10px;
+  color: #A84900;
+  font-size: 0.8rem;
+  font-weight: 700;
+  letter-spacing: 4px;
+  text-transform: uppercase;
+}
+.encabezado-galeria h2 {
+  margin-bottom: 12px;
+  color: #5F2900;
+}
+.encabezado-galeria p {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+#carouselCamila {
+  overflow: hidden;
+  border-radius: 20px;
+  box-shadow: 0 10px 22px rgba(95, 41, 0, 0.08);
+}
+#carouselCamila .carousel-item img {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+}
+
+.contenedor {
+  max-width: 1200px;
+  width: 90%;
+  margin: 70px auto 90px;
+  padding: 55px 30px;
+  background-color: #FFFFFF;
+  border-radius: 20px;
+  box-shadow: 0 10px 22px rgba(95, 41, 0, 0.08);
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+}
+.contenedor span {
+  display: block;
+  margin-bottom: 15px;
+  color: #A84900;
+  font-size: 0.8rem;
+  font-weight: 700;
+  letter-spacing: 4px;
+  text-transform: uppercase;
+}
+.contenedor h2 {
+  margin-bottom: 0;
+  color: #5F2900;
+  font-size: 2.4rem;
+  font-weight: 600;
+}
+.contenedor::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100px;
+  height: 5px;
+  background-color: #A84900;
+  border-radius: 0 0 20px 20px;
+}
+
+.cafe-caliente,
+.cafe-frio,
+.pasteleria {
+  max-width: 1200px;
+  width: 90%;
+  margin: 0 auto 70px;
+}
+.cafe-caliente h2,
+.cafe-frio h2,
+.pasteleria h2 {
+  margin-bottom: 30px;
+  text-align: center;
+  color: #5F2900;
+}
+
+.contenedor-calientes,
+.contenedor-frios,
+.contenedor-tortas {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2rem;
+}
+
+.historia {
+  max-width: 1100px;
+  width: 90%;
+  margin: 40px auto 70px;
+  padding: 40px 25px;
+  background-color: #FFFFFF;
+  border: 1px solid #E8D9CF;
+  border-radius: 20px;
+  box-shadow: 0 10px 22px rgba(95, 41, 0, 0.08);
+  position: relative;
+  overflow: hidden;
+}
+.historia h2 {
+  margin-bottom: 25px;
+  color: #5F2900;
+  text-align: left;
+  font-size: 2rem;
+}
+.historia::after {
+  content: "";
+  position: absolute;
+  width: 150px;
+  height: 150px;
+  top: -70px;
+  right: -60px;
+  background-color: #E8D9CF;
+  border-radius: 50%;
+  opacity: 0.5;
+}
+
+.esencia {
+  max-width: 1100px;
+  width: 90%;
+  margin: 0 auto 70px;
+}
+.esencia h2 {
+  text-align: center;
+  margin-bottom: 35px;
+  color: #5F2900;
+}
+
+.contenedor-esencia {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+
+.cafeteria {
+  max-width: 1100px;
+  width: 90%;
+  margin: 0 auto 80px;
+}
+
+.cafeteria-nosotros {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 25px;
+}
+.cafeteria-nosotros h2 {
+  text-align: center;
+}
+.cafeteria-nosotros figure {
+  margin: 0;
+  width: 100%;
+}
+.cafeteria-nosotros img {
+  width: 100%;
+  height: 320px;
+  object-fit: cover;
+  border-radius: 20px;
+  box-shadow: 0 10px 22px rgba(95, 41, 0, 0.08);
+}
+.cafeteria-nosotros figcaption {
+  margin-top: 8px;
+  font-size: 0.8rem;
+  font-style: italic;
+  color: #555555;
+  text-align: right;
+}
+
+.preguntas-frecuentes {
+  max-width: 900px;
+  width: 90%;
+  margin: 0 auto 80px;
+}
+.preguntas-frecuentes > h2 {
+  margin-bottom: 30px;
+  color: #5F2900;
+  text-align: center;
+}
+
+.accordion {
+  --bs-accordion-border-color: #E8D9CF;
+  --bs-accordion-border-radius: 20px;
+}
+
+.contacto {
+  margin-bottom: 40px;
+}
+
+.informacion {
+  max-width: 1100px;
+  width: 90%;
+  margin: 0 auto 50px;
+}
+.informacion > h2 {
+  margin-bottom: 30px;
+  text-align: center;
+  color: #5F2900;
+}
+
+.texto-info {
+  max-width: 600px;
+  margin: 0 auto 35px;
+  text-align: center;
+}
+
+.contenedor-informacion {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 20px;
+}
+
+@media (min-width: 768px) {
+  .titulo-inicio {
+    grid-template-columns: 1fr 1fr;
+    gap: 45px;
+  }
+  .texto-inicio h2 {
+    font-size: 3rem;
+  }
+  .imagen-inicio img {
+    height: 350px;
+  }
+  .porque-elegirnos {
+    padding: 45px 40px;
+  }
+  .beneficios {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .contenedor-favoritos {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  #carouselCamila .carousel-item img {
+    height: 430px;
+  }
+  .contenedor {
+    padding: 65px 50px;
+  }
+  .contenedor h2 {
+    font-size: 3rem;
+  }
+  .contenedor-calientes,
+  .contenedor-frios,
+  .contenedor-tortas {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .contenedor-esencia {
+    flex-direction: row;
+  }
+  .historia p {
+    text-align: justify;
+  }
+  .cafeteria-nosotros img {
+    height: 420px;
+  }
+  .contenedor-informacion {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  .informacion > h2 {
+    font-size: 2rem;
+  }
+}
+@media (min-width: 1024px) {
+  .titulo-inicio {
+    grid-template-columns: 1.1fr 0.9fr;
+    gap: 60px;
+  }
+  .texto-inicio h2 {
+    font-size: 3.5rem;
+  }
+  .imagen-inicio img {
+    height: 400px;
+  }
+  .porque-elegirnos {
+    padding: 45px 50px;
+  }
+  .beneficios {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  .contenedor-favoritos {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  #carouselCamila .carousel-item img {
+    height: 520px;
+  }
+  .contenedor {
+    padding: 75px 80px;
+  }
+  .contenedor h2 {
+    font-size: 3.6rem;
+  }
+  .contenedor-calientes,
+  .contenedor-frios,
+  .contenedor-tortas {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  .cafeteria-nosotros img {
+    height: 500px;
+  }
+  .contenedor-informacion {
+    flex-direction: row;
+    flex-wrap: nowrap;
+    gap: 30px;
+  }
+}
+.boton-inicio {
+  display: inline-block;
+  padding: 12px 24px;
+  background-color: #5F2900;
+  color: #FFFFFF;
+  border: none;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: 500;
+  cursor: pointer;
+  transition: 0.3s;
+}
+.boton-inicio:hover {
+  background-color: #A84900;
+  color: #FFFFFF;
+}
+
+.beneficio {
+  padding: 26px 24px;
+  background-color: #FFFFFF;
+  border: 1px solid #E8D9CF;
+  border-radius: 20px;
+  text-align: center;
+  transition: 0.3s;
+}
+.beneficio h3 {
+  margin-bottom: 8px;
+  font-size: 1.05rem;
+  font-weight: 500;
+  color: #5F2900;
+}
+.beneficio p {
+  margin: 0;
+}
+.beneficio:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 10px 22px rgba(95, 41, 0, 0.08);
+  border-color: #A84900;
+}
+
+.favoritos {
+  padding: 1.25rem;
+  overflow: hidden;
+  background-color: #FFFFFF;
+  border: 1px solid #E8D9CF;
+  border-radius: 20px;
+  transition: 0.3s;
+}
+.favoritos:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 22px rgba(95, 41, 0, 0.08);
+}
+.favoritos figure {
+  margin: 0;
+}
+.favoritos img {
+  width: 100%;
+  height: 320px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+.favoritos figcaption {
+  padding: 8px 18px 0;
+  font-size: 0.75rem;
+  font-style: italic;
+  color: #555555;
+}
+
+.texto-favoritos {
+  padding: 18px;
+}
+.texto-favoritos h3 {
+  margin-bottom: 10px;
+  color: #A84900;
+  text-align: center;
+}
+.texto-favoritos p {
+  margin: 0;
+  text-align: center;
+}
+
+.calientes,
+.frio,
+.tortas {
+  overflow: hidden;
+  padding: 0;
+  background-color: #FFFFFF;
+  border: 1px solid #E8D9CF;
+  border-radius: 20px;
+  transition: 0.3s;
+}
+.calientes:hover,
+.frio:hover,
+.tortas:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 22px rgba(95, 41, 0, 0.08);
+}
+.calientes figure,
+.frio figure,
+.tortas figure {
+  margin: 0;
+}
+.calientes img,
+.frio img,
+.tortas img {
+  width: 100%;
+  height: 280px;
+  object-fit: cover;
+}
+.calientes figcaption,
+.frio figcaption,
+.tortas figcaption {
+  padding: 8px 18px 0;
+  font-size: 0.75rem;
+  font-style: italic;
+  color: #555555;
+}
+.calientes h3,
+.frio h3,
+.tortas h3 {
+  padding: 15px 18px 0;
+  color: #A84900;
+  text-align: center;
+  font-size: 1.2rem;
+}
+.calientes p,
+.frio p,
+.tortas p {
+  padding: 0 18px 20px;
+  margin: 0;
+  text-align: center;
+}
+.calientes .historia-esencia,
+.frio .historia-esencia,
+.tortas .historia-esencia {
+  flex: 1;
+  min-width: 250px;
+  padding: 30px 25px;
+  background-color: #FFFFFF;
+  border: 1px solid #E8D9CF;
+  border-radius: 20px;
+  text-align: center;
+  transition: 0.3s;
+}
+.calientes .historia-esencia:hover,
+.frio .historia-esencia:hover,
+.tortas .historia-esencia:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 10px 22px rgba(95, 41, 0, 0.08);
+}
+.calientes .historia-esencia h3,
+.frio .historia-esencia h3,
+.tortas .historia-esencia h3 {
+  margin-bottom: 10px;
+  color: #A84900;
+}
+.calientes .historia-esencia p,
+.frio .historia-esencia p,
+.tortas .historia-esencia p {
+  margin: 0;
+}
+
+.historia-esencia {
+  flex: 1;
+  padding: 30px 25px;
+  background-color: #FFFFFF;
+  border: 1px solid #E8D9CF;
+  border-radius: 20px;
+  text-align: center;
+  transition: 0.3s;
+}
+.historia-esencia:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 10px 22px rgba(95, 41, 0, 0.08);
+}
+.historia-esencia h3 {
+  margin-bottom: 10px;
+  color: #A84900;
+}
+.historia-esencia p {
+  margin: 0;
+}
+
+.accordion-item {
+  margin-bottom: 15px;
+  overflow: hidden;
+  border: 1px solid #E8D9CF !important;
+  border-radius: 20px !important;
+}
+
+.accordion-button {
+  padding: 20px 25px;
+  color: #5F2900;
+  background-color: #FFFFFF;
+  font-weight: 600;
+  box-shadow: none !important;
+}
+.accordion-button:not(.collapsed) {
+  color: #A84900;
+  background-color: #EBE5E7;
+  box-shadow: none;
+}
+.accordion-button:focus {
+  border-color: #E8D9CF;
+  box-shadow: none;
+}
+
+.accordion-body {
+  padding: 20px 25px;
+  background-color: #FFFFFF;
+}
+
+.ubis {
+  flex: 1;
+  width: 100%;
+  padding: 30px 25px;
+  background-color: #FFFFFF;
+  border: 1px solid #E8D9CF;
+  border-radius: 20px;
+  text-align: center;
+  transition: 0.3s;
+}
+.ubis:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 10px 22px rgba(95, 41, 0, 0.08);
+}
+.ubis h3 {
+  margin-bottom: 12px;
+  color: #A84900;
+  font-size: 1.15rem;
+}
+.ubis p {
+  margin: 0;
+  font-size: 0.95rem;
+}
+
+@media (min-width: 768px) {
+  .favoritos img {
+    height: 340px;
+  }
+  .calientes img,
+  .frio img,
+  .tortas img {
+    height: 320px;
+  }
+  .preguntas-frecuentes {
+    width: 85%;
+    max-width: 800px;
+    margin-bottom: 70px;
+  }
+  .preguntas-frecuentes > h2 {
+    font-size: 2rem;
+  }
+  .accordion-button {
+    padding: 20px 22px;
+    font-size: 1rem;
+  }
+  .accordion-body {
+    padding: 20px 22px;
+    font-size: 0.95rem;
+  }
+}
+@media (min-width: 1024px) {
+  .favoritos img {
+    height: 360px;
+  }
+  .calientes img,
+  .frio img,
+  .tortas img {
+    height: 350px;
+  }
+  .preguntas-frecuentes {
+    max-width: 900px;
+    width: 80%;
+    margin-bottom: 90px;
+  }
+  .preguntas-frecuentes > h2 {
+    font-size: 2.2rem;
+    margin-bottom: 35px;
+  }
+  .accordion-button {
+    padding: 22px 25px;
+    font-size: 1.05rem;
+  }
+  .accordion-body {
+    padding: 22px 25px;
+    font-size: 1rem;
+  }
+  .ubis {
+    min-width: 0;
+    padding: 35px 30px;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */
