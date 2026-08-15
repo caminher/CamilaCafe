@@ -1,0 +1,592 @@
+@use "../utilities/variables" as v;
+
+//-----------------------------------------------------------------INDEX----------------------------------------------------------
+// HERO INICIO 
+
+.titulo-inicio {
+    max-width: 1250px;
+    margin: 40px auto 60px;
+    padding: 20px;
+
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 35px;
+    align-items: center;
+}
+
+.texto-inicio {
+
+    h2 {
+        margin-bottom: 20px;
+
+        font-size: 2.5rem;
+        line-height: 1.15;
+        font-weight: 600;
+        color: v.$color-primary;
+
+        strong {
+            color: v.$color-secondary;
+        }
+    }
+
+    p {
+        margin-bottom: 25px;
+    }
+}
+
+.imagen-inicio {
+    margin: 0;
+
+    img {
+        width: 100%;
+        height: 280px;
+
+        object-fit: cover;
+        border-radius: v.$radio-grande;
+        box-shadow: v.$sombra;
+    }
+
+    figcaption {
+        margin-top: 8px;
+
+        font-size: 0.75rem;
+        font-style: italic;
+        color: v.$color-text-secondary;
+
+        text-align: right;
+    }
+}
+
+// POR QUÉ ELEGIRNOS
+
+.porque-elegirnos {
+    max-width: 1100px;
+    width: 90%;
+    margin: 70px auto;
+    padding: 35px 25px;
+    background-color: v.$color-blanco;
+    border: 1px solid v.$color-accent;
+    border-radius: v.$radio-grande;
+    box-shadow: v.$sombra;
+    text-align: center;
+}
+
+.encabezado-seccion {
+    max-width: 650px;
+    margin: 0 auto 45px;
+    text-align: center;
+
+    span {
+        display: block;
+        margin-bottom: 10px;
+        color: v.$color-secondary;
+        font-size: 0.75rem;
+        font-weight: 700;
+        letter-spacing: 4px;
+        text-transform: uppercase;
+    }
+
+    h2 {
+        margin-bottom: 14px;
+        font-size: 2.2rem;
+        font-weight: 600;
+        color: v.$color-primary;
+    }
+
+    p {
+        max-width: 620px;
+        margin: 0 auto;
+    }
+}
+
+.beneficios {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 18px;
+}
+
+
+// FAVORITOS
+
+.nuestros-favoritos {
+    max-width: 1250px;
+    margin: 80px auto;
+    padding: 20px;
+
+    display: grid;
+    grid-template-areas:
+        "titulo"
+        "favoritos";
+    grid-template-columns: 1fr;
+    gap: 2rem;
+}
+
+.encabezado-favoritos {
+    grid-area: titulo;
+    margin-bottom: 35px;
+    text-align: center;
+}
+
+.contenedor-favoritos {
+    grid-area: favoritos;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 25px;
+}
+
+// CARRUSEL
+
+.galeria {
+    max-width: 1100px;
+    width: 90%;
+    margin: 80px auto;
+}
+
+.encabezado-galeria {
+    margin-bottom: 35px;
+    text-align: center;
+
+    span {
+        display: block;
+        margin-bottom: 10px;
+        color: v.$color-secondary;
+        font-size: 0.8rem;
+        font-weight: 700;
+        letter-spacing: 4px;
+        text-transform: uppercase;
+    }
+
+    h2 {
+        margin-bottom: 12px;
+        color: v.$color-primary;
+    }
+
+    p {
+        max-width: 600px;
+        margin: 0 auto;
+    }
+}
+
+#carouselCamila {
+    overflow: hidden;
+
+    border-radius: v.$radio-grande;
+    box-shadow: v.$sombra;
+
+    .carousel-item {
+        img {
+            width: 100%;
+            height: 300px;
+            object-fit: cover;
+        }
+    }
+}
+
+// --------------------CONTENEDOR GENERAL DE CADA PESTAÑA-------------------------
+
+.contenedor {
+    max-width: 1200px;
+    width: 90%;
+    margin: 70px auto 90px;
+    padding: 55px 30px;
+
+    background-color: v.$color-blanco;
+    border-radius: v.$radio-grande;
+    box-shadow: v.$sombra;
+
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+
+    span {
+        display: block;
+        margin-bottom: 15px;
+
+        color: v.$color-secondary;
+        font-size: 0.8rem;
+        font-weight: 700;
+        letter-spacing: 4px;
+        text-transform: uppercase;
+    }
+
+    h2 {
+        margin-bottom: 0;
+
+        color: v.$color-primary;
+        font-size: 2.4rem;
+        font-weight: 600;
+    }
+
+    &::before {
+        content: "";
+        position: absolute;
+
+        top: 0;
+        left: 50%;
+        transform: translateX(-50%);
+
+        width: 100px;
+        height: 5px;
+
+        background-color: v.$color-secondary;
+        border-radius: 0 0 20px 20px;
+    }
+}
+
+
+// ------------------------------------------------------------------ SERVICIOS -----------------------------------------------
+
+.cafe-caliente,
+.cafe-frio,
+.pasteleria {
+    max-width: 1200px;
+    width: 90%;
+    margin: 0 auto 70px;
+
+    h2 {
+        margin-bottom: 30px;
+        text-align: center;
+        color: v.$color-primary;
+    }
+}
+
+.contenedor-calientes,
+.contenedor-frios,
+.contenedor-tortas {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 2rem;
+}
+
+
+
+// ---------------- SOBRE NOSOTROS ----------------
+
+// HISTORIA
+
+.historia {
+    max-width: 1100px;
+    width: 90%;
+    margin: 40px auto 70px;
+    padding: 40px 25px;
+
+    background-color: v.$color-blanco;
+    border: 1px solid v.$color-accent;
+    border-radius: v.$radio-grande;
+    box-shadow: v.$sombra;
+
+    position: relative;
+    overflow: hidden;
+
+    h2 {
+        margin-bottom: 25px;
+        color: v.$color-primary;
+        text-align: left;
+        font-size: 2rem;
+    }
+
+    &::after {
+        content: "";
+        position: absolute;
+
+        width: 150px;
+        height: 150px;
+
+        top: -70px;
+        right: -60px;
+
+        background-color: v.$color-accent;
+        border-radius: 50%;
+        opacity: 0.5;
+    }
+}
+
+
+// NUESTRA ESENCIA
+
+.esencia {
+    max-width: 1100px;
+    width: 90%;
+    margin: 0 auto 70px;
+
+    h2 {
+        text-align: center;
+        margin-bottom: 35px;
+        color: v.$color-primary;
+    }
+}
+
+.contenedor-esencia {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+
+// ESPACIO
+
+.cafeteria {
+    max-width: 1100px;
+    width: 90%;
+    margin: 0 auto 80px;
+}
+
+.cafeteria-nosotros {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 25px;
+
+    h2 {
+        text-align: center;
+    }
+
+    figure {
+        margin: 0;
+        width: 100%;
+    }
+
+    img {
+        width: 100%;
+        height: 320px;
+        object-fit: cover;
+        border-radius: v.$radio-grande;
+        box-shadow: v.$sombra;
+    }
+
+    figcaption {
+        margin-top: 8px;
+        font-size: 0.8rem;
+        font-style: italic;
+        color: v.$color-text-secondary;
+        text-align: right;
+    }
+}
+
+// ---------------- PREGUNTAS FRECUENTES ----------------
+
+.preguntas-frecuentes {
+    max-width: 900px;
+    width: 90%;
+    margin: 0 auto 80px;
+
+    >h2 {
+        margin-bottom: 30px;
+        color: v.$color-primary;
+        text-align: center;
+    }
+}
+
+.accordion {
+    --bs-accordion-border-color: #{v.$color-accent};
+    --bs-accordion-border-radius: #{v.$radio-grande};
+}
+
+
+// ---------------- CONTACTO ----------------
+
+.contacto {
+    margin-bottom: 40px;
+}
+
+.informacion {
+    max-width: 1100px;
+    width: 90%;
+    margin: 0 auto 50px;
+
+    >h2 {
+        margin-bottom: 30px;
+        text-align: center;
+        color: v.$color-primary;
+    }
+}
+
+.texto-info {
+    max-width: 600px;
+    margin: 0 auto 35px;
+    text-align: center;
+}
+
+.contenedor-informacion {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px;
+}
+
+// ---------------------------------TABLET---------------
+
+@media (min-width: 768px) {
+
+    //---------------------- INDEX------------------------------
+
+    .titulo-inicio {
+        grid-template-columns: 1fr 1fr;
+        gap: 45px;
+    }
+
+    .texto-inicio {
+        h2 {
+            font-size: 3rem;
+        }
+    }
+
+    .imagen-inicio {
+        img {
+            height: 350px;
+        }
+    }
+
+    .porque-elegirnos {
+        padding: 45px 40px;
+    }
+
+    .beneficios {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .contenedor-favoritos {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    #carouselCamila {
+        .carousel-item {
+            img {
+                height: 430px;
+            }
+        }
+    }
+
+    // --------------------CONTENEDOR GENERAL DE CADA PESTAÑA-------------------------
+
+    .contenedor {
+        padding: 65px 50px;
+
+        h2 {
+            font-size: 3rem;
+        }
+    }
+
+
+    // -------------------------- SERVICIOS ----------------
+
+    .contenedor-calientes,
+    .contenedor-frios,
+    .contenedor-tortas {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    //--------------------------SOBRE NOSOTROS-----------------------
+
+    .contenedor-esencia {
+        flex-direction: row;
+
+    }
+
+    .historia {
+        p {
+            text-align: justify;
+        }
+    }
+
+    .cafeteria-nosotros {
+        img {
+            height: 420px;
+        }
+    }
+
+    //--------------- CONTACTO---------
+
+    .contenedor-informacion {
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    .informacion {
+        >h2 {
+            font-size: 2rem;
+        }
+    }
+}
+
+
+
+
+// ---------------------ESCRITORIO------------------------------
+
+@media (min-width: 1024px) {
+
+    // ------------------------INDEX-------------------------
+
+    .titulo-inicio {
+        grid-template-columns: 1.1fr 0.9fr;
+        gap: 60px;
+    }
+
+    .texto-inicio {
+        h2 {
+            font-size: 3.5rem;
+        }
+    }
+
+    .imagen-inicio {
+        img {
+            height: 400px;
+        }
+    }
+
+    .porque-elegirnos {
+        padding: 45px 50px;
+    }
+
+    .beneficios {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .contenedor-favoritos {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    #carouselCamila {
+        .carousel-item {
+            img {
+                height: 520px;
+            }
+        }
+    }
+
+    // --------------------CONTENEDOR GENERAL DE CADA PESTAÑA-------------------------
+
+    .contenedor {
+        padding: 75px 80px;
+
+        h2 {
+            font-size: 3.6rem;
+        }
+    }
+
+
+    // ------------------------- SERVICIOS -------------------
+
+    .contenedor-calientes,
+    .contenedor-frios,
+    .contenedor-tortas {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    //-------------------------SOBRE NOSOTROS------------------
+
+    .cafeteria-nosotros {
+        img {
+            height: 500px;
+        }
+    }
+
+    //------------------------CONTACTO--------------
+    .contenedor-informacion {
+        flex-direction: row;
+        flex-wrap: nowrap;
+        gap: 30px;
+    }
+
+}

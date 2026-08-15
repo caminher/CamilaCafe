@@ -1,0 +1,361 @@
+@use "../utilities/variables" as v;
+@use "../utilities/mixins" as m;
+
+// tarjetas de POR QUE ELEGIRNOS
+
+.beneficio {
+    padding: 26px 24px;
+
+    background-color: v.$color-blanco;
+    border: 1px solid v.$color-accent;
+    border-radius: v.$radio-grande;
+
+    text-align: center;
+    transition: 0.3s;
+
+    h3 {
+        margin-bottom: 8px;
+        font-size: 1.05rem;
+        font-weight: 500;
+        color: v.$color-primary;
+    }
+
+    p {
+        margin: 0;
+    }
+
+    &:hover {
+        @include m.hover-card;
+        border-color: v.$color-secondary;
+    }
+}
+
+// tarjeta de FAVORITOS
+
+.favoritos {
+    padding: 1.25rem;
+    overflow: hidden;
+
+    background-color: v.$color-blanco;
+    border: 1px solid v.$color-accent;
+    border-radius: v.$radio-grande;
+
+    transition: 0.3s;
+
+    &:hover {
+        @include m.hover-card(-5px);
+    }
+
+    figure {
+        margin: 0;
+    }
+
+    img {
+        width: 100%;
+        height: 320px;
+        object-fit: cover;
+        border-radius: v.$radio-chico;
+    }
+
+    figcaption {
+        padding: 8px 18px 0;
+        font-size: 0.75rem;
+        font-style: italic;
+        color: v.$color-text-secondary;
+    }
+}
+
+.texto-favoritos {
+    padding: 18px;
+
+    h3 {
+        margin-bottom: 10px;
+        color: v.$color-secondary;
+        text-align: center;
+    }
+
+    p {
+        margin: 0;
+        text-align: center;
+    }
+}
+
+
+// -------------------------------------------------------SERVICIOS----------------------------------------
+
+// tarjeta PRODUCTOS
+
+.calientes,
+.frio,
+.tortas {
+    overflow: hidden;
+    padding: 0;
+
+    background-color: v.$color-blanco;
+    border: 1px solid v.$color-accent;
+    border-radius: v.$radio-grande;
+
+    transition: 0.3s;
+
+    &:hover {
+        @include m.hover-card(-5px);
+    }
+
+    figure {
+        margin: 0;
+    }
+
+    img {
+        width: 100%;
+        height: 280px;
+        object-fit: cover;
+    }
+
+    figcaption {
+        padding: 8px 18px 0;
+
+        font-size: 0.75rem;
+        font-style: italic;
+        color: v.$color-text-secondary;
+    }
+
+    h3 {
+        padding: 15px 18px 0;
+        color: v.$color-secondary;
+        text-align: center;
+        font-size: 1.2rem;
+    }
+
+    p {
+        padding: 0 18px 20px;
+        margin: 0;
+        text-align: center;
+    }
+
+    // ----------------------------------------------------SOBRE NOSOTROS----------------------
+
+    // tarjeta historia
+
+    .historia-esencia {
+        flex: 1;
+        min-width: 250px;
+        padding: 30px 25px;
+
+        background-color: v.$color-blanco;
+        border: 1px solid v.$color-accent;
+        border-radius: v.$radio-grande;
+
+        text-align: center;
+        transition: 0.3s;
+
+        &:hover {
+            @include m.hover-card;
+        }
+
+        h3 {
+            margin-bottom: 10px;
+            color: v.$color-secondary;
+        }
+
+        p {
+            margin: 0;
+        }
+    }
+}
+
+// tarjeta NUESTRA ESENCIA
+
+.historia-esencia {
+    flex: 1;
+    padding: 30px 25px;
+
+    background-color: v.$color-blanco;
+    border: 1px solid v.$color-accent;
+    border-radius: v.$radio-grande;
+
+    text-align: center;
+    transition: 0.3s;
+
+    &:hover {
+        @include m.hover-card;
+    }
+
+    h3 {
+        margin-bottom: 10px;
+        color: v.$color-secondary;
+    }
+
+    p {
+        margin: 0;
+    }
+}
+
+// -------------------------------------------------- FAQ ---------------------
+
+
+// tarjeta ACORDEÓN
+
+.accordion-item {
+    margin-bottom: 15px;
+    overflow: hidden;
+
+    border: 1px solid v.$color-accent !important;
+    border-radius: v.$radio-grande !important;
+}
+
+.accordion-button {
+    padding: 20px 25px;
+
+    color: v.$color-primary;
+    background-color: v.$color-blanco;
+
+    font-weight: 600;
+    box-shadow: none !important;
+
+    &:not(.collapsed) {
+        color: v.$color-secondary;
+        background-color: v.$bg-main;
+        box-shadow: none;
+    }
+
+    &:focus {
+        border-color: v.$color-accent;
+        box-shadow: none;
+    }
+}
+
+.accordion-body {
+    padding: 20px 25px;
+    background-color: v.$color-blanco;
+}
+
+//-----------------------------CONTACTO----------------------------------------------------------
+
+// tarjeta CONTACTO
+
+.ubis {
+    flex: 1;
+    width: 100%;
+    padding: 30px 25px;
+
+    background-color: v.$color-blanco;
+    border: 1px solid v.$color-accent;
+    border-radius: v.$radio-grande;
+
+    text-align: center;
+    transition: 0.3s;
+
+    &:hover {
+        @include m.hover-card;
+    }
+
+    h3 {
+        margin-bottom: 12px;
+        color: v.$color-secondary;
+        font-size: 1.15rem;
+    }
+
+    p {
+        margin: 0;
+        font-size: 0.95rem;
+    }
+}
+
+// ----------------------TABLET----------------------
+
+@media (min-width: 768px) {
+
+    .favoritos {
+        img {
+            height: 340px;
+        }
+    }
+
+    // -------------------------------------------------------SERVICIOS----------------------------------------
+
+    .calientes,
+    .frio,
+    .tortas {
+
+        img {
+            height: 320px;
+        }
+    }
+
+    // -------------------------------------------------- FAQ ---------------------
+
+    .preguntas-frecuentes {
+        width: 85%;
+        max-width: 800px;
+        margin-bottom: 70px;
+
+        >h2 {
+            font-size: 2rem;
+        }
+    }
+
+    .accordion-button {
+        padding: 20px 22px;
+        font-size: 1rem;
+    }
+
+    .accordion-body {
+        padding: 20px 22px;
+        font-size: 0.95rem;
+    }
+
+}
+
+
+// -------------------ESCRITORIO---------------
+
+@media (min-width: 1024px) {
+
+    .favoritos {
+        img {
+            height: 360px;
+        }
+    }
+
+    // -------------------------------------------------------SERVICIOS----------------------------------------
+
+    .calientes,
+    .frio,
+    .tortas {
+
+        img {
+            height: 350px;
+        }
+    }
+
+    // -------------------------------------------------- FAQ ---------------------
+
+    .preguntas-frecuentes {
+        max-width: 900px;
+        width: 80%;
+        margin-bottom: 90px;
+
+        >h2 {
+            font-size: 2.2rem;
+            margin-bottom: 35px;
+        }
+    }
+
+    .accordion-button {
+        padding: 22px 25px;
+        font-size: 1.05rem;
+    }
+
+    .accordion-body {
+        padding: 22px 25px;
+        font-size: 1rem;
+    }
+
+    //--------------------------------CONTACTO--------------
+
+    .ubis {
+        min-width: 0;
+        padding: 35px 30px;
+    }
+
+}
