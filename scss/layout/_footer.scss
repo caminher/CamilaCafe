@@ -1,5 +1,4 @@
 @use "../utilities/variables";
-@use "../utilities/mixins";
 
 
 footer {
@@ -35,7 +34,6 @@ footer {
     max-width: 1200px;
     width: 90%;
     margin: 0 auto;
-
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -46,7 +44,11 @@ footer {
 // LOGO
 
 .footerlogo {
-    @include m.flex-center;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
 
     figure {
         margin: 0;

@@ -3,6 +3,10 @@
 
 .boton-inicio {
 
+    @include mixins.boton(
+        variables.$color-primary,
+        variables.$color-blanco);
+
     &:hover {
         background-color: variables.$color-secondary;
         color: variables.$color-blanco;

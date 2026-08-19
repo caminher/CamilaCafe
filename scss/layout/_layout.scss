@@ -7,7 +7,6 @@
     max-width: 1250px;
     margin: 40px auto 60px;
     padding: 20px;
-
     display: grid;
     grid-template-columns: 1fr;
     gap: 35px;
@@ -225,7 +224,6 @@
         width: 100px;
         height: 5px;
         margin: -55px auto 35px;
-
         background-color: variables.$color-secondary;
         border-radius: 0 0 20px 20px;
     }
