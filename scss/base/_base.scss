@@ -10,8 +10,8 @@
 
 body {
     font-family: "Poppins", sans-serif;
-    color: v.$color-negro;
-    background-color: v.$bg-main;
+    color: variables.$color-negro;
+    background-color: variables.$bg-main;
     font-size: 16px;
 }
 
@@ -21,20 +21,20 @@ main {
     h2 {
         font-size: 2rem;
         font-weight: 600;
-        color: v.$color-primary;
+        color: variables.$color-primary;
     }
 
     h3 {
         font-size: 1.5rem;
         font-weight: 500;
-        color: v.$color-secondary;
+        color: variables.$color-secondary;
     }
 
     p {
         font-size: 1rem;
         font-weight: 400;
         line-height: 1.6;
-        color: v.$color-negro;
+        color: variables.$color-negro;
     }
 }
 

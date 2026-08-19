@@ -1,4 +1,4 @@
-@use "variables" as v;
+@use "variables";
 
 // FLEX CENTER
 
@@ -9,13 +9,6 @@
 }
 
 
-// TARJETAS HOVER
-
-@mixin hover-card($movimiento: -4px) {
-    transform: translateY($movimiento);
-    box-shadow: v.$sombra;
-}
-
 
 // BOTÓN
 
@@ -25,9 +18,8 @@
     background-color: $bg;
     color: $color;
     border: none;
-    border-radius: v.$radio-chico;
+    border-radius: variables.$radio-chico;
     text-decoration: none;
     font-weight: 500;
     cursor: pointer;
-    transition: 0.3s;
 }

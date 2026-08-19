@@ -1,7 +1,7 @@
 @use "../utilities/variables" as v;
 
 header {
-    background-color: v.$color-blanco;
-    border-bottom: 2px solid v.$color-accent;
+    background-color: variables.$color-blanco;
+    border-bottom: 2px solid variables.$color-accent;
 }
 
