@@ -1,11 +1,14 @@
-@use "../utilities/variables" as v;
-@use "../utilities/mixins" as m;
+@use "../utilities/variables";
+@use "../utilities/mixins";
 
 .boton-inicio {
-    @include m.boton(v.$color-primary, v.$color-blanco);
+
+    @include mixins.boton(
+        variables.$color-primary,
+        variables.$color-blanco);
 
     &:hover {
-        background-color: v.$color-secondary;
-        color: v.$color-blanco;
+        background-color: variables.$color-secondary;
+        color: variables.$color-blanco;
     }
 }

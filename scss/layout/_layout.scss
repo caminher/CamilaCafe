@@ -1,4 +1,4 @@
-@use "../utilities/variables" as v;
+@use "../utilities/variables";
 
 //-----------------------------------------------------------------INDEX----------------------------------------------------------
 // HERO INICIO 
@@ -7,7 +7,6 @@
     max-width: 1250px;
     margin: 40px auto 60px;
     padding: 20px;
-
     display: grid;
     grid-template-columns: 1fr;
     gap: 35px;
@@ -22,10 +21,10 @@
         font-size: 2.5rem;
         line-height: 1.15;
         font-weight: 600;
-        color: v.$color-primary;
+        color: variables.$color-primary;
 
         strong {
-            color: v.$color-secondary;
+            color: variables.$color-secondary;
         }
     }
 
@@ -42,8 +41,8 @@
         height: 280px;
 
         object-fit: cover;
-        border-radius: v.$radio-grande;
-        box-shadow: v.$sombra;
+        border-radius: variables.$radio-grande;
+        box-shadow: variables.$sombra;
     }
 
     figcaption {
@@ -51,7 +50,7 @@
 
         font-size: 0.75rem;
         font-style: italic;
-        color: v.$color-text-secondary;
+        color: variables.$color-text-secondary;
 
         text-align: right;
     }
@@ -64,10 +63,10 @@
     width: 90%;
     margin: 70px auto;
     padding: 35px 25px;
-    background-color: v.$color-blanco;
-    border: 1px solid v.$color-accent;
-    border-radius: v.$radio-grande;
-    box-shadow: v.$sombra;
+    background-color: variables.$color-blanco;
+    border: 1px solid variables.$color-accent;
+    border-radius: variables.$radio-grande;
+    box-shadow: variables.$sombra;
     text-align: center;
 }
 
@@ -79,7 +78,7 @@
     span {
         display: block;
         margin-bottom: 10px;
-        color: v.$color-secondary;
+        color: variables.$color-secondary;
         font-size: 0.75rem;
         font-weight: 700;
         letter-spacing: 4px;
@@ -90,7 +89,7 @@
         margin-bottom: 14px;
         font-size: 2.2rem;
         font-weight: 600;
-        color: v.$color-primary;
+        color: variables.$color-primary;
     }
 
     p {
@@ -149,7 +148,7 @@
     span {
         display: block;
         margin-bottom: 10px;
-        color: v.$color-secondary;
+        color: variables.$color-secondary;
         font-size: 0.8rem;
         font-weight: 700;
         letter-spacing: 4px;
@@ -158,7 +157,7 @@
 
     h2 {
         margin-bottom: 12px;
-        color: v.$color-primary;
+        color: variables.$color-primary;
     }
 
     p {
@@ -170,8 +169,8 @@
 #carouselCamila {
     overflow: hidden;
 
-    border-radius: v.$radio-grande;
-    box-shadow: v.$sombra;
+    border-radius: variables.$radio-grande;
+    box-shadow: variables.$sombra;
 
     .carousel-item {
         img {
@@ -190,19 +189,21 @@
     margin: 70px auto 90px;
     padding: 55px 30px;
 
-    background-color: v.$color-blanco;
-    border-radius: v.$radio-grande;
-    box-shadow: v.$sombra;
+    background-color: variables.$color-blanco;
+    border-radius: variables.$radio-grande;
+    box-shadow: variables.$sombra;
 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     text-align: center;
-    position: relative;
     overflow: hidden;
 
     span {
         display: block;
         margin-bottom: 15px;
 
-        color: v.$color-secondary;
+        color: variables.$color-secondary;
         font-size: 0.8rem;
         font-weight: 700;
         letter-spacing: 4px;
@@ -212,23 +213,18 @@
     h2 {
         margin-bottom: 0;
 
-        color: v.$color-primary;
+        color: variables.$color-primary;
         font-size: 2.4rem;
         font-weight: 600;
     }
 
     &::before {
         content: "";
-        position: absolute;
-
-        top: 0;
-        left: 50%;
-        transform: translateX(-50%);
-
+        display: block;
         width: 100px;
         height: 5px;
-
-        background-color: v.$color-secondary;
+        margin: -55px auto 35px;
+        background-color: variables.$color-secondary;
         border-radius: 0 0 20px 20px;
     }
 }
@@ -246,7 +242,7 @@
     h2 {
         margin-bottom: 30px;
         text-align: center;
-        color: v.$color-primary;
+        color: variables.$color-primary;
     }
 }
 
@@ -270,35 +266,20 @@
     margin: 40px auto 70px;
     padding: 40px 25px;
 
-    background-color: v.$color-blanco;
-    border: 1px solid v.$color-accent;
-    border-radius: v.$radio-grande;
-    box-shadow: v.$sombra;
+    background-color: variables.$color-blanco;
+    border: 1px solid variables.$color-accent;
+    border-radius: variables.$radio-grande;
+    box-shadow: variables.$sombra;
 
-    position: relative;
     overflow: hidden;
 
     h2 {
         margin-bottom: 25px;
-        color: v.$color-primary;
+        color: variables.$color-primary;
         text-align: left;
         font-size: 2rem;
     }
 
-    &::after {
-        content: "";
-        position: absolute;
-
-        width: 150px;
-        height: 150px;
-
-        top: -70px;
-        right: -60px;
-
-        background-color: v.$color-accent;
-        border-radius: 50%;
-        opacity: 0.5;
-    }
 }
 
 
@@ -312,7 +293,7 @@
     h2 {
         text-align: center;
         margin-bottom: 35px;
-        color: v.$color-primary;
+        color: variables.$color-primary;
     }
 }
 
@@ -350,15 +331,15 @@
         width: 100%;
         height: 320px;
         object-fit: cover;
-        border-radius: v.$radio-grande;
-        box-shadow: v.$sombra;
+        border-radius: variables.$radio-grande;
+        box-shadow: variables.$sombra;
     }
 
     figcaption {
         margin-top: 8px;
         font-size: 0.8rem;
         font-style: italic;
-        color: v.$color-text-secondary;
+        color: variables.$color-text-secondary;
         text-align: right;
     }
 }
@@ -372,14 +353,14 @@
 
     >h2 {
         margin-bottom: 30px;
-        color: v.$color-primary;
+        color: variables.$color-primary;
         text-align: center;
     }
 }
 
 .accordion {
-    --bs-accordion-border-color: #{v.$color-accent};
-    --bs-accordion-border-radius: #{v.$radio-grande};
+    --bs-accordion-border-color: #{variables.$color-accent};
+    --bs-accordion-border-radius: #{variables.$radio-grande};
 }
 
 
@@ -397,7 +378,7 @@
     >h2 {
         margin-bottom: 30px;
         text-align: center;
-        color: v.$color-primary;
+        color: variables.$color-primary;
     }
 }
 

@@ -1,4 +1,4 @@
-@use "../utilities/variables" as v;
+@use "../utilities/variables";
 
 // NAVEGACIÓN
 
@@ -10,19 +10,18 @@
     }
 
     .nav-link {
-        color: v.$color-primary;
+        color: variables.$color-primary;
         font-weight: 500;
         padding: 0.75rem 1rem;
-        border-radius: v.$radio-chico;
-        transition: 0.3s;
+        border-radius: variables.$radio-chico;
 
         &:hover {
-            background-color: v.$color-accent;
-            color: v.$color-secondary;
+            background-color: variables.$color-accent;
+            color: variables.$color-secondary;
         }
 
         &.active {
-            color: v.$color-secondary;
+            color: variables.$color-secondary;
             font-weight: 600;
         }
     }
@@ -42,7 +41,7 @@
     }
 
     h1 {
-        color: v.$color-primary;
+        color: variables.$color-primary;
         font-size: 1.5rem;
         font-weight: 700;
         margin: 0;
@@ -52,7 +51,7 @@
 // BOTÓN HAMBURGUESA
 
 .navbar-toggler {
-    border: 1px solid v.$color-accent;
+    border: 1px solid variables.$color-accent;
 
     &:focus {
         box-shadow: 0 0 0 0.15rem rgba(95, 41, 0, 0.15);
