@@ -752,6 +752,7 @@ footer a:hover {
   background-color: #FFFFFF;
   border: 1px solid #E8D9CF;
   border-radius: 20px;
+  transition: transform 300ms ease-out;
   text-align: center;
 }
 .beneficio h3 {
@@ -765,6 +766,7 @@ footer a:hover {
 }
 .beneficio:hover {
   border-color: #A84900;
+  transform: translate(0, -10px) scale(1.05, 1.05);
 }
 
 .favoritos {
@@ -773,6 +775,7 @@ footer a:hover {
   background-color: #FFFFFF;
   border: 1px solid #E8D9CF;
   border-radius: 20px;
+  transition: transform 300ms ease-out;
 }
 .favoritos figure {
   margin: 0;
@@ -788,6 +791,10 @@ footer a:hover {
   font-size: 0.75rem;
   font-style: italic;
   color: #555555;
+}
+.favoritos:hover {
+  border-color: #A84900;
+  transform: translate(0, -10px) scale(1.05, 1.05);
 }
 
 .texto-favoritos {
