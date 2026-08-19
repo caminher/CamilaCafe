@@ -395,6 +395,57 @@
     gap: 20px;
 }
 
+// FORMULARIO DE CONTACTO
+
+.formulario {
+    width: 90%;
+    max-width: 900px;
+    margin: 40px auto 80px;
+    padding: 30px 25px;
+
+    background-color: variables.$color-blanco;
+    border: 1px solid variables.$color-accent;
+    border-radius: variables.$radio-grande;
+    box-shadow: variables.$sombra;
+
+    h2 {
+        margin-bottom: 25px;
+        color: variables.$color-primary;
+        text-align: center;
+    }
+
+    form {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+}
+
+.informaciondecontacto {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+
+    label {
+        color: variables.$color-primary;
+        font-weight: 500;
+    }
+
+    input,
+    textarea {
+        width: 100%;
+        padding: 12px 15px;
+        border: 1px solid variables.$color-accent;
+        border-radius: variables.$radio-chico;
+        font-family: inherit;
+    }
+
+    textarea {
+        resize: vertical;
+    }
+}
+
+
 // ---------------------------------TABLET---------------
 
 @media (min-width: 768px) {
@@ -488,6 +539,40 @@
             font-size: 2rem;
         }
     }
+
+    // FORMULARIO DE CONTACTO
+
+    .formulario {
+        max-width: 800px;
+        padding: 40px;
+
+        form {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 20px;
+        }
+    }
+
+    .informaciondecontacto {
+        width: 100%;
+
+        input,
+        textarea {
+            width: 100%;
+        }
+
+        &:last-of-type {
+            grid-column: 1 / -1;
+        }
+    }
+
+    .boton-formulario {
+        grid-column: 1 / -1;
+        justify-self: center;
+    }
+
+
+
 }
 
 
@@ -568,6 +653,32 @@
         flex-direction: row;
         flex-wrap: nowrap;
         gap: 30px;
+    }
+
+    //FORMULARIO DE CONTACTO
+
+    .formulario {
+        max-width: 950px;
+        padding: 50px 60px;
+
+        form {
+            column-gap: 35px;
+            row-gap: 25px;
+        }
+
+        h2 {
+            font-size: 2rem;
+            margin-bottom: 30px;
+        }
+    }
+
+    .informaciondecontacto {
+        gap: 10px;
+
+        input,
+        textarea {
+            padding: 14px 16px;
+        }
     }
 
 }

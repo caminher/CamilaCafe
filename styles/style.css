@@ -369,8 +369,10 @@ footer a:hover {
   background-color: #FFFFFF;
   border-radius: 20px;
   box-shadow: 0 10px 22px rgba(95, 41, 0, 0.08);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   text-align: center;
-  position: relative;
   overflow: hidden;
 }
 .contenedor span {
@@ -390,11 +392,10 @@ footer a:hover {
 }
 .contenedor::before {
   content: "";
-  position: absolute;
-  top: 0;
-  left: 50%;
+  display: block;
   width: 100px;
   height: 5px;
+  margin: -55px auto 35px;
   background-color: #A84900;
   border-radius: 0 0 20px 20px;
 }
@@ -431,7 +432,6 @@ footer a:hover {
   border: 1px solid #E8D9CF;
   border-radius: 20px;
   box-shadow: 0 10px 22px rgba(95, 41, 0, 0.08);
-  position: relative;
   overflow: hidden;
 }
 .historia h2 {
@@ -439,17 +439,6 @@ footer a:hover {
   color: #5F2900;
   text-align: left;
   font-size: 2rem;
-}
-.historia::after {
-  content: "";
-  position: absolute;
-  width: 150px;
-  height: 150px;
-  top: -70px;
-  right: -60px;
-  background-color: #E8D9CF;
-  border-radius: 50%;
-  opacity: 0.5;
 }
 
 .esencia {
@@ -547,6 +536,48 @@ footer a:hover {
   gap: 20px;
 }
 
+.formulario {
+  width: 90%;
+  max-width: 900px;
+  margin: 40px auto 80px;
+  padding: 30px 25px;
+  background-color: #FFFFFF;
+  border: 1px solid #E8D9CF;
+  border-radius: 20px;
+  box-shadow: 0 10px 22px rgba(95, 41, 0, 0.08);
+}
+.formulario h2 {
+  margin-bottom: 25px;
+  color: #5F2900;
+  text-align: center;
+}
+.formulario form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.informaciondecontacto {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+.informaciondecontacto label {
+  color: #5F2900;
+  font-weight: 500;
+}
+.informaciondecontacto input,
+.informaciondecontacto textarea {
+  width: 100%;
+  padding: 12px 15px;
+  border: 1px solid #E8D9CF;
+  border-radius: 8px;
+  font-family: inherit;
+}
+.informaciondecontacto textarea {
+  resize: vertical;
+}
+
 @media (min-width: 768px) {
   .titulo-inicio {
     grid-template-columns: 1fr 1fr;
@@ -597,6 +628,29 @@ footer a:hover {
   .informacion > h2 {
     font-size: 2rem;
   }
+  .formulario {
+    max-width: 800px;
+    padding: 40px;
+  }
+  .formulario form {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+  }
+  .informaciondecontacto {
+    width: 100%;
+  }
+  .informaciondecontacto input,
+  .informaciondecontacto textarea {
+    width: 100%;
+  }
+  .informaciondecontacto:last-of-type {
+    grid-column: 1/-1;
+  }
+  .boton-formulario {
+    grid-column: 1/-1;
+    justify-self: center;
+  }
 }
 @media (min-width: 1024px) {
   .titulo-inicio {
@@ -640,6 +694,25 @@ footer a:hover {
     flex-wrap: nowrap;
     gap: 30px;
   }
+  .formulario {
+    max-width: 950px;
+    padding: 50px 60px;
+  }
+  .formulario form {
+    column-gap: 35px;
+    row-gap: 25px;
+  }
+  .formulario h2 {
+    font-size: 2rem;
+    margin-bottom: 30px;
+  }
+  .informaciondecontacto {
+    gap: 10px;
+  }
+  .informaciondecontacto input,
+  .informaciondecontacto textarea {
+    padding: 14px 16px;
+  }
 }
 .boton-inicio {
   display: inline-block;
@@ -653,6 +726,23 @@ footer a:hover {
   cursor: pointer;
 }
 .boton-inicio:hover {
+  background-color: #A84900;
+  color: #FFFFFF;
+}
+
+.boton-formulario {
+  display: inline-block;
+  padding: 12px 24px;
+  background-color: #5F2900;
+  color: #FFFFFF;
+  border: none;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: 500;
+  cursor: pointer;
+  align-self: center;
+}
+.boton-formulario:hover {
   background-color: #A84900;
   color: #FFFFFF;
 }
@@ -674,7 +764,6 @@ footer a:hover {
   margin: 0;
 }
 .beneficio:hover {
-  box-shadow: 0 10px 22px rgba(95, 41, 0, 0.08);
   border-color: #A84900;
 }
 
@@ -684,9 +773,6 @@ footer a:hover {
   background-color: #FFFFFF;
   border: 1px solid #E8D9CF;
   border-radius: 20px;
-}
-.favoritos:hover {
-  box-shadow: 0 10px 22px rgba(95, 41, 0, 0.08);
 }
 .favoritos figure {
   margin: 0;
@@ -725,11 +811,6 @@ footer a:hover {
   background-color: #FFFFFF;
   border: 1px solid #E8D9CF;
   border-radius: 20px;
-}
-.calientes:hover,
-.frio:hover,
-.tortas:hover {
-  box-shadow: 0 10px 22px rgba(95, 41, 0, 0.08);
 }
 .calientes figure,
 .frio figure,
@@ -777,11 +858,6 @@ footer a:hover {
   border-radius: 20px;
   text-align: center;
 }
-.calientes .historia-esencia:hover,
-.frio .historia-esencia:hover,
-.tortas .historia-esencia:hover {
-  box-shadow: 0 10px 22px rgba(95, 41, 0, 0.08);
-}
 .calientes .historia-esencia h3,
 .frio .historia-esencia h3,
 .tortas .historia-esencia h3 {
@@ -801,9 +877,6 @@ footer a:hover {
   border: 1px solid #E8D9CF;
   border-radius: 20px;
   text-align: center;
-}
-.historia-esencia:hover {
-  box-shadow: 0 10px 22px rgba(95, 41, 0, 0.08);
 }
 .historia-esencia h3 {
   margin-bottom: 10px;
@@ -850,9 +923,6 @@ footer a:hover {
   border: 1px solid #E8D9CF;
   border-radius: 20px;
   text-align: center;
-}
-.ubis:hover {
-  box-shadow: 0 10px 22px rgba(95, 41, 0, 0.08);
 }
 .ubis h3 {
   margin-bottom: 12px;
