@@ -12,3 +12,17 @@
         color: variables.$color-blanco;
     }
 }
+
+.boton-formulario {
+    @include mixins.boton(
+        variables.$color-primary,
+        variables.$color-blanco
+    );
+
+    align-self: center;
+
+    &:hover {
+        background-color: variables.$color-secondary;
+        color: variables.$color-blanco;
+    }
+}
