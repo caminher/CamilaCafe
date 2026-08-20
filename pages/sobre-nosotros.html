@@ -10,7 +10,13 @@
     <!-- BOOTSTRAP CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <!-- AOS -->
 
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+    <!-- ANIMATE -->
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
     <!-- MI CSS -->
     <link rel="stylesheet" href="../styles/style.css">
 
@@ -77,8 +83,8 @@
 
         </section>
 
-        <section class="historia">
-            <h2>Nuestra historia</h2>
+        <section class="historia" data-aos="fade-up" data-aos-duration="500" data-aos-easing="ease-out-cubic">
+            <h2 class="animate__animated animate__backInDown animate__slow">Nuestra historia</h2>
 
             <p>
                 Camila Café nació con la idea de crear un espacio moderno y acogedor donde el café de especialidad y la
@@ -121,7 +127,7 @@
 
         </section>
 
-        <section class="cafeteria">
+        <section class="cafeteria" data-aos="fade-up" data-aos-duration="500" data-aos-easing="ease-out-cubic">
 
             <div class="cafeteria-nosotros">
 
@@ -198,6 +204,13 @@
 
 
     </footer>
+
+    <!--AOS JS -->
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
 
     <!-- BOOTSTRAP JS -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"

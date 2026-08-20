@@ -755,18 +755,29 @@ footer a:hover {
   border-radius: 20px;
 }
 
-.ubis, .historia-esencia, .calientes,
+.ubis, .calientes,
 .frio,
 .tortas, .favoritos, .beneficio {
   transition: transform 300ms ease-out;
 }
-.ubis:hover, .historia-esencia:hover, .calientes:hover,
+.ubis:hover, .calientes:hover,
 .frio:hover,
 .tortas:hover, .favoritos:hover, .beneficio:hover {
   border-color: #A84900;
   transform: translate(0, -10px) scale(1.05, 1.05);
 }
 
+@keyframes efecto-esencia {
+  0% {
+    transform: scale(1, 1);
+  }
+  50% {
+    transform: scale(1.05, 1.05);
+  }
+  100% {
+    transform: scale(1, 1);
+  }
+}
 .beneficio {
   padding: 26px 24px;
   text-align: center;
@@ -857,6 +868,10 @@ footer a:hover {
 }
 
 .historia-esencia {
+  animation-name: efecto-esencia;
+  animation-duration: 4s;
+  animation-timing-function: ease-in;
+  animation-iteration-count: 3;
   flex: 1;
   padding: 30px 25px;
   text-align: center;
