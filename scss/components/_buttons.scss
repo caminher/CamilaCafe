@@ -15,8 +15,8 @@
 
 .boton-formulario {
     @include mixins.boton(
-        variables.$color-primary,
-        variables.$color-blanco
+        variables.$color-blanco,
+        variables.$color-primary
     );
 
     align-self: center;
