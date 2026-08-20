@@ -9,13 +9,25 @@
     border-radius: variables.$radio-grande;
 }
 
+//animacion base para extend
+
+%animacion-tarjeta {
+    transition: transform 300ms ease-out;
+
+    &:hover {
+        border-color: variables.$color-secondary;
+        transform: translate(0, -10px) scale(1.05, 1.05);
+    }
+}
+
 // tarjetas de POR QUE ELEGIRNOS
 
 .beneficio {
 
     @extend %tarjeta-base;
+    @extend %animacion-tarjeta;
+
     padding: 26px 24px;
-    transition: transform 300ms ease-out;
     text-align: center;
 
 
@@ -29,11 +41,6 @@
     p {
         margin: 0;
     }
-
-    &:hover {
-        border-color: variables.$color-secondary;
-        transform: translate(0, -10px) scale(1.05, 1.05);
-    }
 }
 
 // tarjeta de FAVORITOS
@@ -41,7 +48,7 @@
 .favoritos {
     
     @extend %tarjeta-base;
-    transition: transform 300ms ease-out;
+    @extend %animacion-tarjeta;
     padding: 1.25rem;
     overflow: hidden;
 
@@ -63,10 +70,6 @@
         color: variables.$color-text-secondary;
     }
 
-    &:hover {
-        border-color: variables.$color-secondary;
-        transform: translate(0, -10px) scale(1.05, 1.05);
-    }
 }
 
 .texto-favoritos {
@@ -94,6 +97,7 @@
 .tortas {
     
     @extend %tarjeta-base;
+    @extend %animacion-tarjeta;
     overflow: hidden;
     padding: 0;
 
@@ -138,6 +142,7 @@
 .historia-esencia {
 
     @extend %tarjeta-base;
+    @extend %animacion-tarjeta;    
     flex: 1;
     padding: 30px 25px;
     text-align: center;
@@ -199,6 +204,7 @@
 .ubis {
 
     @extend %tarjeta-base;
+    @extend %animacion-tarjeta;
     flex: 1;
     width: 100%;
     padding: 30px 25px;

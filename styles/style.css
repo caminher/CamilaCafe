@@ -755,9 +755,20 @@ footer a:hover {
   border-radius: 20px;
 }
 
+.ubis, .historia-esencia, .calientes,
+.frio,
+.tortas, .favoritos, .beneficio {
+  transition: transform 300ms ease-out;
+}
+.ubis:hover, .historia-esencia:hover, .calientes:hover,
+.frio:hover,
+.tortas:hover, .favoritos:hover, .beneficio:hover {
+  border-color: #A84900;
+  transform: translate(0, -10px) scale(1.05, 1.05);
+}
+
 .beneficio {
   padding: 26px 24px;
-  transition: transform 300ms ease-out;
   text-align: center;
 }
 .beneficio h3 {
@@ -769,13 +780,8 @@ footer a:hover {
 .beneficio p {
   margin: 0;
 }
-.beneficio:hover {
-  border-color: #A84900;
-  transform: translate(0, -10px) scale(1.05, 1.05);
-}
 
 .favoritos {
-  transition: transform 300ms ease-out;
   padding: 1.25rem;
   overflow: hidden;
 }
@@ -793,10 +799,6 @@ footer a:hover {
   font-size: 0.75rem;
   font-style: italic;
   color: #555555;
-}
-.favoritos:hover {
-  border-color: #A84900;
-  transform: translate(0, -10px) scale(1.05, 1.05);
 }
 
 .texto-favoritos {

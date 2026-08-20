@@ -11,6 +11,14 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
 
+    <!-- AOS -->
+
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+    <!-- ANIMATE -->
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+
     <!-- MI CSS -->
     <link rel="stylesheet" href="../styles/style.css">
 
@@ -82,7 +90,8 @@
 
             <h2> Cafés Calientes</h2>
 
-            <div class="contenedor-calientes">
+            <div class="contenedor-calientes" data-aos="zoom-out-up" data-aos-easing="ease-in-back" data-aos-delay="50"
+                data-aos-duration="1000">
                 <article class="calientes">
                     <figure>
                         <img src="../assets/espresso.png" alt="espresso">
@@ -93,8 +102,6 @@
 
                         </figcaption>
                     </figure>
-
-
 
                 </article>
 
@@ -132,7 +139,8 @@
 
         </section>
 
-        <section class="cafe-frio">
+        <section class="cafe-frio" data-aos="zoom-out-up" data-aos-easing="ease-in-back" data-aos-delay="50"
+            data-aos-duration="1000">
             <h2> Cafés Fríos</h2>
 
             <div class="contenedor-frios">
@@ -187,7 +195,8 @@
 
         </section>
 
-        <section class="pasteleria">
+        <section class="pasteleria" data-aos="zoom-out-up" data-aos-easing="ease-in-back" data-aos-delay="50"
+            data-aos-duration="1000">
             <h2> Pastelería</h2>
 
             <div class="contenedor-tortas">
@@ -286,6 +295,13 @@
 
 
     </footer>
+
+    <!--AOS JS -->
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
 
     <!-- BOOTSTRAP JS -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
