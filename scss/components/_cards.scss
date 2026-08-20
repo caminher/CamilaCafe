@@ -179,8 +179,8 @@
     margin-bottom: 15px;
     overflow: hidden;
 
-    border: 1px solid variables.$color-accent !important;
-    border-radius: variables.$radio-grande !important;
+    border: 1px solid variables.$color-accent;
+    border-radius: variables.$radio-grande;
 }
 
 .accordion-button {
@@ -190,7 +190,7 @@
     background-color: variables.$color-blanco;
 
     font-weight: 600;
-    box-shadow: none !important;
+    box-shadow: none;
 
     &:not(.collapsed) {
         color: variables.$color-secondary;

@@ -887,8 +887,8 @@ footer a:hover {
 .accordion-item {
   margin-bottom: 15px;
   overflow: hidden;
-  border: 1px solid #E8D9CF !important;
-  border-radius: 20px !important;
+  border: 1px solid #E8D9CF;
+  border-radius: 20px;
 }
 
 .accordion-button {
@@ -896,7 +896,7 @@ footer a:hover {
   color: #5F2900;
   background-color: #FFFFFF;
   font-weight: 600;
-  box-shadow: none !important;
+  box-shadow: none;
 }
 .accordion-button:not(.collapsed) {
   color: #A84900;
