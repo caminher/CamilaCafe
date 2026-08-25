@@ -98,7 +98,7 @@ header {
   width: 50px;
   height: auto;
 }
-.logo h1 {
+.logo span {
   color: #5F2900;
   font-size: 1.5rem;
   font-weight: 700;
@@ -245,14 +245,14 @@ footer a:hover {
   align-items: center;
 }
 
-.texto-inicio h2 {
+.texto-inicio h1 {
   margin-bottom: 20px;
-  font-size: 2.5rem;
+  font-size: 3rem;
   line-height: 1.15;
   font-weight: 600;
   color: #5F2900;
 }
-.texto-inicio h2 strong {
+.texto-inicio h1 strong {
   color: #A84900;
 }
 .texto-inicio p {
@@ -396,7 +396,7 @@ footer a:hover {
   text-align: center;
   overflow: hidden;
 }
-.contenedor span {
+.contenedor h1 {
   display: block;
   margin-bottom: 15px;
   color: #A84900;

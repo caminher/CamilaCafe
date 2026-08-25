@@ -16,10 +16,10 @@
 
 .texto-inicio {
 
-    h2 {
+    h1 {
         margin-bottom: 20px;
 
-        font-size: 2.5rem;
+        font-size: 3rem;
         line-height: 1.15;
         font-weight: 600;
         color: variables.$color-primary;
@@ -200,7 +200,7 @@
     text-align: center;
     overflow: hidden;
 
-    span {
+    h1 {
         display: block;
         margin-bottom: 15px;
 
