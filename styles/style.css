@@ -1,4 +1,24 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap");
+.beneficio, .favoritos, .calientes,
+.frio,
+.tortas, .historia-esencia, .ubis {
+  background-color: #FFFFFF;
+  border: 1px solid #E8D9CF;
+  border-radius: 20px;
+}
+
+.beneficio, .favoritos, .calientes,
+.frio,
+.tortas, .ubis {
+  transition: transform 300ms ease-out;
+}
+.beneficio:hover, .favoritos:hover, .calientes:hover,
+.frio:hover,
+.tortas:hover, .ubis:hover {
+  border-color: #A84900;
+  transform: translate(0, -10px) scale(1.05, 1.05);
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -115,19 +135,20 @@ footer a:hover {
 }
 
 .pie {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
   max-width: 1200px;
   width: 90%;
   margin: 0 auto;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
   gap: 25px;
 }
 
 .footerlogo {
   display: flex;
-  justify-content: center;
   align-items: center;
+  flex-direction: row;
+  justify-content: center;
 }
 .footerlogo figure {
   margin: 0;
@@ -362,6 +383,9 @@ footer a:hover {
 }
 
 .contenedor {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
   max-width: 1200px;
   width: 90%;
   margin: 70px auto 90px;
@@ -369,9 +393,6 @@ footer a:hover {
   background-color: #FFFFFF;
   border-radius: 20px;
   box-shadow: 0 10px 22px rgba(95, 41, 0, 0.08);
-  display: flex;
-  flex-direction: column;
-  align-items: center;
   text-align: center;
   overflow: hidden;
 }
@@ -466,8 +487,8 @@ footer a:hover {
 
 .cafeteria-nosotros {
   display: flex;
-  flex-direction: column;
   align-items: center;
+  flex-direction: column;
   gap: 25px;
 }
 .cafeteria-nosotros h2 {
@@ -531,8 +552,8 @@ footer a:hover {
 
 .contenedor-informacion {
   display: flex;
+  align-items: center;
   flex-direction: column;
-  justify-content: center;
   gap: 20px;
 }
 
@@ -745,26 +766,6 @@ footer a:hover {
 .boton-formulario:hover {
   background-color: #A84900;
   color: #FFFFFF;
-}
-
-.ubis, .historia-esencia, .calientes,
-.frio,
-.tortas, .favoritos, .beneficio {
-  background-color: #FFFFFF;
-  border: 1px solid #E8D9CF;
-  border-radius: 20px;
-}
-
-.ubis, .calientes,
-.frio,
-.tortas, .favoritos, .beneficio {
-  transition: transform 300ms ease-out;
-}
-.ubis:hover, .calientes:hover,
-.frio:hover,
-.tortas:hover, .favoritos:hover, .beneficio:hover {
-  border-color: #A84900;
-  transform: translate(0, -10px) scale(1.05, 1.05);
 }
 
 @keyframes efecto-esencia {

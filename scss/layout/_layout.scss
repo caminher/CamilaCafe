@@ -1,4 +1,5 @@
 @use "../utilities/variables";
+@use "../utilities/mixins";
 
 //-----------------------------------------------------------------INDEX----------------------------------------------------------
 // HERO INICIO 
@@ -184,6 +185,9 @@
 // --------------------CONTENEDOR GENERAL DE CADA PESTAÑA-------------------------
 
 .contenedor {
+
+    @include mixins.flex(center, column);
+
     max-width: 1200px;
     width: 90%;
     margin: 70px auto 90px;
@@ -193,9 +197,6 @@
     border-radius: variables.$radio-grande;
     box-shadow: variables.$sombra;
 
-    display: flex;
-    flex-direction: column;
-    align-items: center;
     text-align: center;
     overflow: hidden;
 
@@ -313,9 +314,7 @@
 }
 
 .cafeteria-nosotros {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    @include mixins.flex(center, column);
     gap: 25px;
 
     h2 {
@@ -389,9 +388,7 @@
 }
 
 .contenedor-informacion {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+    @include mixins.flex(center, column);
     gap: 20px;
 }
 

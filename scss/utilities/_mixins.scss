@@ -14,3 +14,11 @@
     font-weight: 500;
     cursor: pointer;
 }
+
+// FLEX
+
+@mixin flex($align, $direction) {
+    display: flex;
+    align-items: $align;
+    flex-direction: $direction;
+}
