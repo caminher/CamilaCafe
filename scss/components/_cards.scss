@@ -1,23 +1,6 @@
 @use "../utilities/variables";
+@use "../utilities/extends";
 
-// tarjeta base para extend
-
-%tarjeta-base {
-    background-color: variables.$color-blanco;
-    border: 1px solid variables.$color-accent;
-    border-radius: variables.$radio-grande;
-}
-
-//animacion base para extend
-
-%animacion-tarjeta {
-    transition: transform 300ms ease-out;
-
-    &:hover {
-        border-color: variables.$color-secondary;
-        transform: translate(0, -10px) scale(1.05, 1.05);
-    }
-}
 
 //animacion nuestra escencia 
 
